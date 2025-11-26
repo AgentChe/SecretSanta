@@ -71,6 +71,9 @@
 		DE3C02E42ED7132200EB2633 /* PlayfairDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3C02E22ED7132200EB2633 /* PlayfairDisplay-SemiBold.ttf */; };
 		DE3C02E52ED7132200EB2633 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3C02E02ED7132200EB2633 /* PlayfairDisplay-Bold.ttf */; };
 		DE3C02E72ED7147900EB2633 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C02E62ED7147900EB2633 /* GradientButton.swift */; };
+		DE3C02EE2ED7206300EB2633 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C02EB2ED7206300EB2633 /* OnboardingView.swift */; };
+		DE3C02EF2ED7206300EB2633 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C02EC2ED7206300EB2633 /* OnboardingViewController.swift */; };
+		DE3C02F02ED7206300EB2633 /* OIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C02E92ED7206300EB2633 /* OIntroView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +144,9 @@
 		DE3C02E12ED7132200EB2633 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		DE3C02E22ED7132200EB2633 /* PlayfairDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
 		DE3C02E62ED7147900EB2633 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		DE3C02E92ED7206300EB2633 /* OIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OIntroView.swift; sourceTree = "<group>"; };
+		DE3C02EB2ED7206300EB2633 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		DE3C02EC2ED7206300EB2633 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F428807A07E3A5C4371704A2 /* Pods-SecretSanta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretSanta.release.xcconfig"; path = "Target Support Files/Pods-SecretSanta/Pods-SecretSanta.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -353,6 +359,7 @@
 		DE3C02332ED7053C00EB2633 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				DE3C02ED2ED7206300EB2633 /* Onboarding */,
 				DE3C022D2ED7053C00EB2633 /* Paygate */,
 				DE3C02322ED7053C00EB2633 /* Splash */,
 			);
@@ -468,6 +475,24 @@
 				DE3C02E22ED7132200EB2633 /* PlayfairDisplay-SemiBold.ttf */,
 			);
 			path = PlayfairDisplay;
+			sourceTree = "<group>";
+		};
+		DE3C02EA2ED7206300EB2633 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C02E92ED7206300EB2633 /* OIntroView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE3C02ED2ED7206300EB2633 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C02EA2ED7206300EB2633 /* Views */,
+				DE3C02EC2ED7206300EB2633 /* OnboardingViewController.swift */,
+				DE3C02EB2ED7206300EB2633 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -648,6 +673,9 @@
 				DE3C02B82ED7053C00EB2633 /* IAPErrorHelper.swift in Sources */,
 				DE3C02BB2ED7053C00EB2633 /* SplashViewController.swift in Sources */,
 				DE3C02E72ED7147900EB2633 /* GradientButton.swift in Sources */,
+				DE3C02EE2ED7206300EB2633 /* OnboardingView.swift in Sources */,
+				DE3C02EF2ED7206300EB2633 /* OnboardingViewController.swift in Sources */,
+				DE3C02F02ED7206300EB2633 /* OIntroView.swift in Sources */,
 				DE3C02BC2ED7053C00EB2633 /* PaygateInteractor.swift in Sources */,
 				DE3C02BD2ED7053C00EB2633 /* UIColor+Extension.swift in Sources */,
 			);

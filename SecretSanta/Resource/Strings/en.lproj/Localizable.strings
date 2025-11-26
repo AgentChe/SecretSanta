@@ -43,3 +43,13 @@
 // MARK: Splash
 "Splash.Title" = "Secret\nSanta";
 "Splash.Preloader" = "Loading...";
+
+// MARK: Onboarding
+"Onboarding.Create.Title" = "Create your Secret Santa";
+"Onboarding.Create.SubTitle" = "Add participants and set up the game in a minute";
+"Onboarding.Skip.Title" = "Skip unwanted pairs";
+"Onboarding.Skip.SubTitle" = "Tap pairs that shouldn’t exchange gifts";
+"Onboarding.Reveal.Title" = "Reveal the matches";
+"Onboarding.Reveal.SubTitle" = "The app will randomly assign pairs and keep it secret";
+"Onboarding.Particioants.Title" = "Participants will get an email";
+"Onboarding.Particioants.SubTitle" = "The app will randomly assign pairs and keep it secret";

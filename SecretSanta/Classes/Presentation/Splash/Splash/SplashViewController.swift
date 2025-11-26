@@ -48,6 +48,11 @@ private extension SplashViewController {
                 return
             }
             
+            if !OnboardingViewController.wasViewed() {
+                window.rootViewController = OnboardingViewController.make()
+                return
+            }
+            
             if SessionManager().hasActiveSubscriptions() {
 //                window.rootViewController = MainViewController.make() // TODO
             } else {
