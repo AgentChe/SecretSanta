@@ -67,6 +67,10 @@
 		DE3C02DA2ED70A0600EB2633 /* CinzelDecorative-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3C02D92ED70A0600EB2633 /* CinzelDecorative-Bold.ttf */; };
 		DE3C02DC2ED70A0C00EB2633 /* CinzelDecorative-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3C02DB2ED70A0C00EB2633 /* CinzelDecorative-Regular.ttf */; };
 		DE3C02DE2ED70A8700EB2633 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C02DD2ED70A8700EB2633 /* Appearance.swift */; };
+		DE3C02E32ED7132200EB2633 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3C02E12ED7132200EB2633 /* PlayfairDisplay-Regular.ttf */; };
+		DE3C02E42ED7132200EB2633 /* PlayfairDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3C02E22ED7132200EB2633 /* PlayfairDisplay-SemiBold.ttf */; };
+		DE3C02E52ED7132200EB2633 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE3C02E02ED7132200EB2633 /* PlayfairDisplay-Bold.ttf */; };
+		DE3C02E72ED7147900EB2633 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C02E62ED7147900EB2633 /* GradientButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +137,10 @@
 		DE3C02D92ED70A0600EB2633 /* CinzelDecorative-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Bold.ttf"; sourceTree = "<group>"; };
 		DE3C02DB2ED70A0C00EB2633 /* CinzelDecorative-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Regular.ttf"; sourceTree = "<group>"; };
 		DE3C02DD2ED70A8700EB2633 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		DE3C02E02ED7132200EB2633 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		DE3C02E12ED7132200EB2633 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		DE3C02E22ED7132200EB2633 /* PlayfairDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
+		DE3C02E62ED7147900EB2633 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		F428807A07E3A5C4371704A2 /* Pods-SecretSanta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretSanta.release.xcconfig"; path = "Target Support Files/Pods-SecretSanta/Pods-SecretSanta.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,6 +239,7 @@
 				DE3C01F42ED7053C00EB2633 /* PaddingLabel.swift */,
 				DE3C01F52ED7053C00EB2633 /* PaddingTextField.swift */,
 				DE3C01F62ED7053C00EB2633 /* TapAreaButton.swift */,
+				DE3C02E62ED7147900EB2633 /* GradientButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -418,6 +427,7 @@
 		DE3C02C92ED7054300EB2633 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				DE3C02DF2ED712FB00EB2633 /* PlayfairDisplay */,
 				DE3C02D82ED709F700EB2633 /* CinzelDecorative */,
 				DE3C02D52ED7077000EB2633 /* NewYork */,
 			);
@@ -448,6 +458,16 @@
 				DE3C02D92ED70A0600EB2633 /* CinzelDecorative-Bold.ttf */,
 			);
 			path = CinzelDecorative;
+			sourceTree = "<group>";
+		};
+		DE3C02DF2ED712FB00EB2633 /* PlayfairDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C02E02ED7132200EB2633 /* PlayfairDisplay-Bold.ttf */,
+				DE3C02E12ED7132200EB2633 /* PlayfairDisplay-Regular.ttf */,
+				DE3C02E22ED7132200EB2633 /* PlayfairDisplay-SemiBold.ttf */,
+			);
+			path = PlayfairDisplay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,6 +537,9 @@
 				DE3C02D72ED7077000EB2633 /* NewYork-Medium-Bold.ttf in Resources */,
 				DE3C01E52ED703A200EB2633 /* Assets.xcassets in Resources */,
 				DE3C01E72ED703A200EB2633 /* LaunchScreen.storyboard in Resources */,
+				DE3C02E32ED7132200EB2633 /* PlayfairDisplay-Regular.ttf in Resources */,
+				DE3C02E42ED7132200EB2633 /* PlayfairDisplay-SemiBold.ttf in Resources */,
+				DE3C02E52ED7132200EB2633 /* PlayfairDisplay-Bold.ttf in Resources */,
 				DE3C02DA2ED70A0600EB2633 /* CinzelDecorative-Bold.ttf in Resources */,
 				DE3C02682ED7053C00EB2633 /* Paygate.storekit in Resources */,
 			);
@@ -624,6 +647,7 @@
 				DE3C02B72ED7053C00EB2633 /* PaygateActionsView.swift in Sources */,
 				DE3C02B82ED7053C00EB2633 /* IAPErrorHelper.swift in Sources */,
 				DE3C02BB2ED7053C00EB2633 /* SplashViewController.swift in Sources */,
+				DE3C02E72ED7147900EB2633 /* GradientButton.swift in Sources */,
 				DE3C02BC2ED7053C00EB2633 /* PaygateInteractor.swift in Sources */,
 				DE3C02BD2ED7053C00EB2633 /* UIColor+Extension.swift in Sources */,
 			);

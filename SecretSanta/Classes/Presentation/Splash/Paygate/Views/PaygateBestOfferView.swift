@@ -10,11 +10,23 @@ import UIKit
 final class PaygateBestOfferView: UIView {
     lazy var label = makeLabel()
     
+    private lazy var markedAttrs = TextAttributes()
+        .textColor(Appearance.mono100)
+        .font(Fonts.SFPro.regular(size: 12.scale))
+        .lineHeight(19.scale)
+        .textAlignment(.center)
+    private lazy var normalAttrs = TextAttributes()
+        .textColor(Appearance.mono200)
+        .font(Fonts.SFPro.regular(size: 12.scale))
+        .lineHeight(19.scale)
+        .textAlignment(.center)
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         makeConstraints()
         initialize()
+        update(marked: false)
     }
     
     required init?(coder: NSCoder) {
@@ -25,13 +37,17 @@ final class PaygateBestOfferView: UIView {
 // MARK: Public
 extension PaygateBestOfferView {
     func initialize() {
-        backgroundColor = UIColor.white
-        layer.borderWidth = 1.scale
-        layer.borderColor = UIColor(integralRed: 219, green: 223, blue: 230).cgColor
         layer.cornerRadius = 10.scale
     }
     
-    func update(marked: Bool) {}
+    func update(marked: Bool) {
+        let attrs = marked ? markedAttrs : normalAttrs
+        label.attributedText = "Paygate.BestOffer".localized.attributed(with: attrs)
+        
+        backgroundColor = marked ? UIColor(integralRed: 115, green: 34, blue: 34) : Appearance.mono100
+        layer.borderWidth = marked ? 0 : 1.scale
+        layer.borderColor = marked ? UIColor(integralRed: 219, green: 223, blue: 230).cgColor : UIColor.clear.cgColor
+    }
 }
 
 // MARK: Make constraints
@@ -49,14 +65,7 @@ private extension PaygateBestOfferView {
 // MARK: Lazy initialization
 private extension PaygateBestOfferView {
     func makeLabel() -> UILabel {
-        let attrs = TextAttributes()
-            .textColor(UIColor.black)
-            .font(Fonts.SFPro.regular(size: 12.scale))
-            .lineHeight(19.scale)
-            .textAlignment(.center)
-        
         let view = UILabel()
-        view.attributedText = "Paygate.BestOffer".localized.attributed(with: attrs)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

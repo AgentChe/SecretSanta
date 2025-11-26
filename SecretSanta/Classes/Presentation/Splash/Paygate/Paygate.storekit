@@ -95,7 +95,7 @@
               "locale" : "en_US"
             }
           ],
-          "productID" : "iphone.santa.chat.yearly",
+          "productID" : "iphone.santa.tracker.yearly",
           "recurringSubscriptionPeriod" : "P1Y",
           "referenceName" : "Yearly",
           "subscriptionGroupID" : "B66B8F35",
@@ -123,7 +123,7 @@
               "locale" : "en_US"
             }
           ],
-          "productID" : "iphone.santa.chat.weekly",
+          "productID" : "iphone.santa.tracker.weekly",
           "recurringSubscriptionPeriod" : "P1W",
           "referenceName" : "Weekly",
           "subscriptionGroupID" : "B66B8F35",

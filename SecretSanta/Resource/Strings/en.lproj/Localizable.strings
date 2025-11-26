@@ -21,9 +21,9 @@
 "Paygate.Error.Text" = "An error occurred during execution. Try later.";
 "Paygate.Error.Button" = "OK";
 "Paygate.Title" = "Get Premium";
-"Paygate.Info1" = "Magical countdown styles";
-"Paygate.Info2" = "Santa’s arrival tracker";
-"Paygate.Info3" = "Get ready — Santa’s on his way!";
+"Paygate.Info1" = "Set pairing rules";
+"Paygate.Info2" = "Reveal matches";
+"Paygate.Info3" = "Share results with one tap";
 "Paygate.EnableFreeTrial" = "Enable Free Trial";
 "Paygate.FreeTrialEnabled" = "Free Trial Enabled";
 "Paygate.Yearly" = "Yearly";
@@ -39,3 +39,7 @@
 "Paygate.PrivacyPolicy" = "Privacy Policy";
 "Paygate.RestorePurchases" = "Restore Purchases";
 "Paygate.BestOffer" = "⭐ Best Offer";
+
+// MARK: Splash
+"Splash.Title" = "Secret\nSanta";
+"Splash.Preloader" = "Loading...";

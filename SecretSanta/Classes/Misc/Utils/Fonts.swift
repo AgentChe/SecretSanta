@@ -44,4 +44,19 @@ struct Fonts {
             UIFont(name: "CinzelDecorative-Regular", size: size)!
         }
     }
+    
+    // MARK: PlayfairDisplay
+    struct PlayfairDisplay {
+        static func regular(size: CGFloat) -> UIFont {
+            UIFont(name: "PlayfairDisplay-Regular", size: size)!
+        }
+        
+        static func semiBold(size: CGFloat) -> UIFont {
+            UIFont(name: "PlayfairDisplay-SemiBold", size: size)!
+        }
+        
+        static func bold(size: CGFloat) -> UIFont {
+            UIFont(name: "PlayfairDisplay-Bold", size: size)!
+        }
+    }
 }

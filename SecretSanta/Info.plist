@@ -8,6 +8,9 @@
 		<string>NewYork-Medium-Bold.ttf</string>
 		<string>CinzelDecorative-Regular.ttf</string>
 		<string>CinzelDecorative-Bold.ttf</string>
+		<string>PlayfairDisplay-Bold.ttf</string>
+		<string>PlayfairDisplay-Regular.ttf</string>
+		<string>PlayfairDisplay-SemiBold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
