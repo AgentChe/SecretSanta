@@ -10,22 +10,22 @@ import UIKit
 final class OnboardingView: GradientView {
     enum Slide: Hashable {
         case create
-        case skip
+        case exclude
         case reveal
-        case participants
+        case notifications
     }
     
     private lazy var slidesViews: [Slide: UIView] = [
         .create: OIntroView(intro: .create) { [weak self] in
-            self?.scroll(from: .create, to: .skip)
+            self?.scroll(from: .create, to: .exclude)
         },
-        .skip: OIntroView(intro: .skip) { [weak self] in
-            self?.scroll(from: .skip, to: .reveal)
+        .exclude: OIntroView(intro: .exclude) { [weak self] in
+            self?.scroll(from: .exclude, to: .reveal)
         },
         .reveal: OIntroView(intro: .reveal) { [weak self] in
-            self?.scroll(from: .reveal, to: .participants)
+            self?.scroll(from: .reveal, to: .notifications)
         },
-        .participants: OIntroView(intro: .participants) { [weak self] in
+        .notifications: OIntroView(intro: .notifications) { [weak self] in
             self?.finish()
         }
     ]

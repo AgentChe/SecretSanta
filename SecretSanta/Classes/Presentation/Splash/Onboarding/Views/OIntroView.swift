@@ -10,9 +10,9 @@ import UIKit
 final class OIntroView: UIView {
     enum Intro {
         case create
-        case skip
+        case exclude
         case reveal
-        case participants
+        case notifications
     }
     
     lazy var imageView = makeImageView()
@@ -155,12 +155,12 @@ private extension OIntroView.Intro {
         switch self {
         case .create:
             return "Onboarding.Create"
-        case .skip:
-            return "Onboarding.Skip"
+        case .exclude:
+            return "Onboarding.Exclude"
         case .reveal:
             return "Onboarding.Reveal"
-        case .participants:
-            return "Onboarding.Particioants"
+        case .notifications:
+            return "Onboarding.Notifications"
         }
     }
 }

@@ -47,9 +47,9 @@
 // MARK: Onboarding
 "Onboarding.Create.Title" = "Create your Secret Santa";
 "Onboarding.Create.SubTitle" = "Add participants and set up the game in a minute";
-"Onboarding.Skip.Title" = "Skip unwanted pairs";
-"Onboarding.Skip.SubTitle" = "Tap pairs that shouldn’t exchange gifts";
+"Onboarding.Exclude.Title" = "Exclude gift pairs";
+"Onboarding.Exclude.SubTitle" = "Tap to prevent certain people from matching";
 "Onboarding.Reveal.Title" = "Reveal the matches";
-"Onboarding.Reveal.SubTitle" = "The app will randomly assign pairs and keep it secret";
-"Onboarding.Particioants.Title" = "Participants will get an email";
-"Onboarding.Particioants.SubTitle" = "The app will randomly assign pairs and keep it secret";
+"Onboarding.Reveal.SubTitle" = "Pairs are assigned at random and kept hidden until reveal time";
+"Onboarding.Notifications.Title" = "Email Notifications";
+"Onboarding.Notifications.SubTitle" = "Everyone will receive their assigned person to gift";
