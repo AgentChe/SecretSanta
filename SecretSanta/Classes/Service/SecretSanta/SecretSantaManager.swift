@@ -15,11 +15,15 @@ protocol SecretSantaProtocol {
     func editParticipient(id: String, secretSantaId: String, name: String, email: String) -> Single<Participient>
     func deleteParticipient(id: String) -> Single<Void>
     func fetchParticipents(secretSantaId: String) -> Single<[Participient]>
+    func fetchParticipents() -> Single<[Participient]>
     func createExcludePair(secretSantaId: String, participientOneId: String, participientTwoId: String) -> Single<ExcludePair>
     func deleteExcludePair(id: String) -> Single<Void>
     func fetchExcludePairs(secretSantaId: String) -> Single<[ExcludePair]>
     func createMatches(secretSantaId: String, participients: [Participient], excludePairs: [ExcludePair]) -> Single<[Match]>
     func fetchMatches(secretSantaId: String) -> Single<[Match]>
+    func fetchMatches() -> Single<[Match]>
+    func fetchSecretSantasCheckinCompletion() -> Single<[SecretSantaCheckinCompleted]>
+    func fetchSecretSantaParticipientsCount() -> Single<[SecretSantaParticipientsCount]>
 }
 
 final class SecretSantaManager {
@@ -204,6 +208,26 @@ extension SecretSantaManager: SecretSantaProtocol {
             return Disposables.create()
         }
     }
+    
+    func fetchParticipents() -> Single<[Participient]> {
+        Single.create { [weak self] single in
+            guard let dbQueue = self?.dbQueue else {
+                single(.failure(SecretSantaError.dbNotInitialized))
+                return Disposables.create()
+            }
+
+            do {
+                let result = try dbQueue.read { db in
+                    try Participient.fetchAll(db)
+                }
+                single(.success(result))
+            } catch {
+                single(.failure(error))
+            }
+
+            return Disposables.create()
+        }
+    }
 
     func createExcludePair(
         secretSantaId: String,
@@ -350,6 +374,115 @@ extension SecretSantaManager: SecretSantaProtocol {
                         .filter(Column("secretSantaId") == secretSantaId)
                         .fetchAll(db)
                 }
+                single(.success(result))
+            } catch {
+                single(.failure(error))
+            }
+
+            return Disposables.create()
+        }
+    }
+    
+    func fetchMatches() -> Single<[Match]> {
+        Single.create { [weak self] single in
+            guard let dbQueue = self?.dbQueue else {
+                single(.failure(SecretSantaError.dbNotInitialized))
+                return Disposables.create()
+            }
+
+            do {
+                let result = try dbQueue.read { db in
+                    try Match.fetchAll(db)
+                }
+                single(.success(result))
+            } catch {
+                single(.failure(error))
+            }
+
+            return Disposables.create()
+        }
+    }
+    
+    func fetchSecretSantasCheckinCompletion() -> Single<[SecretSantaCheckinCompleted]> {
+        Single.create { [weak self] single in
+            guard let dbQueue = self?.dbQueue else {
+                single(.failure(SecretSantaError.dbNotInitialized))
+                return Disposables.create()
+            }
+
+            do {
+                let result: [Row] = try dbQueue.read { db in
+                    try Row.fetchAll(
+                        db,
+                        sql: """
+                        SELECT SecretSanta.id AS id,
+                               COUNT(Match.id) AS matchesCount
+                        FROM SecretSanta
+                        LEFT JOIN Match ON Match.secretSantaId = SecretSanta.id
+                        GROUP BY SecretSanta.id
+                        """
+                    )
+                }
+
+                var checkinResult = [SecretSantaCheckinCompleted]()
+                checkinResult.reserveCapacity(result.count)
+
+                for row in result {
+                    let id = row["id"] as String
+                    let matchesCount = row["matchesCount"] as Int
+                    
+                    let checkin = SecretSantaCheckinCompleted(
+                        secretSantaId: id,
+                        completed: matchesCount > 0
+                    )
+                    checkinResult.append(checkin)
+                }
+
+                single(.success(checkinResult))
+            } catch {
+                single(.failure(error))
+            }
+
+            return Disposables.create()
+        }
+    }
+
+    func fetchSecretSantaParticipientsCount() -> Single<[SecretSantaParticipientsCount]> {
+        Single.create { [weak self] single in
+            guard let dbQueue = self?.dbQueue else {
+                single(.failure(SecretSantaError.dbNotInitialized))
+                return Disposables.create()
+            }
+
+            do {
+                let rows: [Row] = try dbQueue.read { db in
+                    try Row.fetchAll(
+                        db,
+                        sql: """
+                        SELECT SecretSanta.id AS id,
+                               COUNT(Participient.id) AS participientsCount
+                        FROM SecretSanta
+                        LEFT JOIN Participient
+                          ON Participient.secretSantaId = SecretSanta.id
+                        GROUP BY SecretSanta.id
+                        """
+                    )
+                }
+
+                var result = [SecretSantaParticipientsCount]()
+                result.reserveCapacity(rows.count)
+
+                for row in rows {
+                    let id = row["id"] as String
+                    let count = row["participientsCount"] as Int
+
+                    let item = SecretSantaParticipientsCount(
+                        secretSantaId: id,
+                        count: count
+                    )
+                    result.append(item)
+                }
+
                 single(.success(result))
             } catch {
                 single(.failure(error))

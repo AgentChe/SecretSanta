@@ -53,3 +53,12 @@
 "Onboarding.Reveal.SubTitle" = "Pairs are assigned at random and kept hidden until reveal time";
 "Onboarding.Notifications.Title" = "Email Notifications";
 "Onboarding.Notifications.SubTitle" = "Everyone will receive their assigned person to gift";
+
+// MARK: SecretSantas
+"SecretSantas.Title" = "Secret Santa";
+"SecretSantas.Empty.Title" = "Start You Secret Santa";
+"SecretSantas.Empty.SubTitle" = "Create first event to start your own Secret Santa";
+"SecretSantas.Empty.Action" = "Create";
+"SecretSantas.CreateEvent" = "Create new event";
+"SecretSantas.ParticipientsCount" = "\n%i invites";
+"SecretSantas.Draft" = "Draft";

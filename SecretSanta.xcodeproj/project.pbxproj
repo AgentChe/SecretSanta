@@ -77,6 +77,15 @@
 		DE3C03042ED9FC6600EB2633 /* SecretSanta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03032ED9FC6600EB2633 /* SecretSanta.swift */; };
 		DE3C03062ED9FFFE00EB2633 /* SecretSantaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03052ED9FFFE00EB2633 /* SecretSantaManager.swift */; };
 		DE3C030A2EDB0D2D00EB2633 /* SecretSantaMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03092EDB0D2D00EB2633 /* SecretSantaMediator.swift */; };
+		DE3C030E2EDB106C00EB2633 /* SecretSantasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C030D2EDB106C00EB2633 /* SecretSantasViewController.swift */; };
+		DE3C03102EDB107200EB2633 /* SecretSantasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C030F2EDB107200EB2633 /* SecretSantasViewModel.swift */; };
+		DE3C03122EDB107600EB2633 /* SecretSantasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03112EDB107600EB2633 /* SecretSantasView.swift */; };
+		DE3C03152EDB127B00EB2633 /* SecretSantasEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03142EDB127B00EB2633 /* SecretSantasEmptyView.swift */; };
+		DE3C03182EDB18B900EB2633 /* SecretSantasTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03172EDB18B900EB2633 /* SecretSantasTableView.swift */; };
+		DE3C031A2EDB18C300EB2633 /* SecretSantasTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03192EDB18C300EB2633 /* SecretSantasTableCell.swift */; };
+		DE3C031F2EDB1B0800EB2633 /* SecretSantasTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C031E2EDB1B0800EB2633 /* SecretSantasTableElement.swift */; };
+		DE3C03212EDB247C00EB2633 /* SecretSantaCheckinCompleted.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03202EDB247C00EB2633 /* SecretSantaCheckinCompleted.swift */; };
+		DE3C03232EDB27AB00EB2633 /* SecretSantaParticipientsCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03222EDB27AB00EB2633 /* SecretSantaParticipientsCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,6 +162,15 @@
 		DE3C03032ED9FC6600EB2633 /* SecretSanta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSanta.swift; sourceTree = "<group>"; };
 		DE3C03052ED9FFFE00EB2633 /* SecretSantaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaManager.swift; sourceTree = "<group>"; };
 		DE3C03092EDB0D2D00EB2633 /* SecretSantaMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaMediator.swift; sourceTree = "<group>"; };
+		DE3C030D2EDB106C00EB2633 /* SecretSantasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantasViewController.swift; sourceTree = "<group>"; };
+		DE3C030F2EDB107200EB2633 /* SecretSantasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantasViewModel.swift; sourceTree = "<group>"; };
+		DE3C03112EDB107600EB2633 /* SecretSantasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantasView.swift; sourceTree = "<group>"; };
+		DE3C03142EDB127B00EB2633 /* SecretSantasEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantasEmptyView.swift; sourceTree = "<group>"; };
+		DE3C03172EDB18B900EB2633 /* SecretSantasTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantasTableView.swift; sourceTree = "<group>"; };
+		DE3C03192EDB18C300EB2633 /* SecretSantasTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantasTableCell.swift; sourceTree = "<group>"; };
+		DE3C031E2EDB1B0800EB2633 /* SecretSantasTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantasTableElement.swift; sourceTree = "<group>"; };
+		DE3C03202EDB247C00EB2633 /* SecretSantaCheckinCompleted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaCheckinCompleted.swift; sourceTree = "<group>"; };
+		DE3C03222EDB27AB00EB2633 /* SecretSantaParticipientsCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaParticipientsCount.swift; sourceTree = "<group>"; };
 		F428807A07E3A5C4371704A2 /* Pods-SecretSanta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretSanta.release.xcconfig"; path = "Target Support Files/Pods-SecretSanta/Pods-SecretSanta.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -375,6 +393,7 @@
 		DE3C02532ED7053C00EB2633 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DE3C030B2EDB101200EB2633 /* SecretSanta */,
 				DE3C02332ED7053C00EB2633 /* Splash */,
 			);
 			path = Presentation;
@@ -516,8 +535,48 @@
 			isa = PBXGroup;
 			children = (
 				DE3C03032ED9FC6600EB2633 /* SecretSanta.swift */,
+				DE3C03202EDB247C00EB2633 /* SecretSantaCheckinCompleted.swift */,
+				DE3C03222EDB27AB00EB2633 /* SecretSantaParticipientsCount.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DE3C030B2EDB101200EB2633 /* SecretSanta */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C030C2EDB105B00EB2633 /* SecretSantas */,
+			);
+			path = SecretSanta;
+			sourceTree = "<group>";
+		};
+		DE3C030C2EDB105B00EB2633 /* SecretSantas */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C03132EDB126A00EB2633 /* Views */,
+				DE3C030D2EDB106C00EB2633 /* SecretSantasViewController.swift */,
+				DE3C030F2EDB107200EB2633 /* SecretSantasViewModel.swift */,
+				DE3C03112EDB107600EB2633 /* SecretSantasView.swift */,
+			);
+			path = SecretSantas;
+			sourceTree = "<group>";
+		};
+		DE3C03132EDB126A00EB2633 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C03162EDB18AE00EB2633 /* TableView */,
+				DE3C03142EDB127B00EB2633 /* SecretSantasEmptyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE3C03162EDB18AE00EB2633 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C03172EDB18B900EB2633 /* SecretSantasTableView.swift */,
+				DE3C03192EDB18C300EB2633 /* SecretSantasTableCell.swift */,
+				DE3C031E2EDB1B0800EB2633 /* SecretSantasTableElement.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -649,23 +708,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE3C026B2ED7053C00EB2633 /* PaygateEnableTrialButton.swift in Sources */,
+				DE3C03182EDB18B900EB2633 /* SecretSantasTableView.swift in Sources */,
 				DE3C026C2ED7053C00EB2633 /* ProductPrice.swift in Sources */,
 				DE3C02DE2ED70A8700EB2633 /* Appearance.swift in Sources */,
 				DE3C026E2ED7053C00EB2633 /* PaddingLabel.swift in Sources */,
 				DE3C02712ED7053C00EB2633 /* UIView+RxExtension.swift in Sources */,
 				DE3C02732ED7053C00EB2633 /* NumberLaunches.swift in Sources */,
+				DE3C03232EDB27AB00EB2633 /* SecretSantaParticipientsCount.swift in Sources */,
 				DE3C02762ED7053C00EB2633 /* NavigationController.swift in Sources */,
 				DE3C02792ED7053C00EB2633 /* SignError.swift in Sources */,
 				DE3C027B2ED7053C00EB2633 /* SceneDelegate.swift in Sources */,
 				DE3C027D2ED7053C00EB2633 /* AppDelegate.swift in Sources */,
 				DE3C027E2ED7053C00EB2633 /* GlobalDefinitions.swift in Sources */,
 				DE3C027F2ED7053C00EB2633 /* NavigationControllerSettings.swift in Sources */,
+				DE3C03152EDB127B00EB2633 /* SecretSantasEmptyView.swift in Sources */,
 				DE3C02802ED7053C00EB2633 /* RequestReview.swift in Sources */,
 				DE3C02812ED7053C00EB2633 /* RxActivityIndicator.swift in Sources */,
+				DE3C03102EDB107200EB2633 /* SecretSantasViewModel.swift in Sources */,
 				DE3C02822ED7053C00EB2633 /* TapAreaButton.swift in Sources */,
 				DE3C02832ED7053C00EB2633 /* PaddingTextField.swift in Sources */,
 				DE3C02842ED7053C00EB2633 /* ObservableAndSingle+Extension.swift in Sources */,
 				DE3C02892ED7053C00EB2633 /* PaygateProductButton.swift in Sources */,
+				DE3C031F2EDB1B0800EB2633 /* SecretSantasTableElement.swift in Sources */,
 				DE3C028B2ED7053C00EB2633 /* PaygateInfoCell.swift in Sources */,
 				DE3C028C2ED7053C00EB2633 /* PaygateInfoView.swift in Sources */,
 				DE3C028E2ED7053C00EB2633 /* ObservableRetrySingle.swift in Sources */,
@@ -690,11 +754,14 @@
 				DE3C02A72ED7053C00EB2633 /* IAPError.swift in Sources */,
 				DE3C02A82ED7053C00EB2633 /* SplashReceiptValidationObserver.swift in Sources */,
 				DE3C02A92ED7053C00EB2633 /* ScreenSize.swift in Sources */,
+				DE3C03122EDB107600EB2633 /* SecretSantasView.swift in Sources */,
+				DE3C031A2EDB18C300EB2633 /* SecretSantasTableCell.swift in Sources */,
 				DE3C02AA2ED7053C00EB2633 /* Collection+Extension.swift in Sources */,
 				DE3C02AC2ED7053C00EB2633 /* IAPManager.swift in Sources */,
 				DE3C02AF2ED7053C00EB2633 /* Currency.swift in Sources */,
 				DE3C02B12ED7053C00EB2633 /* IAPProduct.swift in Sources */,
 				DE3C02B22ED7053C00EB2633 /* PurchaseValidationObserver.swift in Sources */,
+				DE3C03212EDB247C00EB2633 /* SecretSantaCheckinCompleted.swift in Sources */,
 				DE3C02B62ED7053C00EB2633 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				DE3C02B72ED7053C00EB2633 /* PaygateActionsView.swift in Sources */,
 				DE3C02B82ED7053C00EB2633 /* IAPErrorHelper.swift in Sources */,
@@ -705,6 +772,7 @@
 				DE3C02F02ED7206300EB2633 /* OIntroView.swift in Sources */,
 				DE3C03062ED9FFFE00EB2633 /* SecretSantaManager.swift in Sources */,
 				DE3C02BC2ED7053C00EB2633 /* PaygateInteractor.swift in Sources */,
+				DE3C030E2EDB106C00EB2633 /* SecretSantasViewController.swift in Sources */,
 				DE3C02BD2ED7053C00EB2633 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

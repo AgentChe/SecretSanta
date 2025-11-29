@@ -55,6 +55,7 @@ private extension SplashViewController {
             
             if SessionManager().hasActiveSubscriptions() {
 //                window.rootViewController = MainViewController.make() // TODO
+                window.rootViewController = SecretSantasViewController.make() // TODO: delete
             } else {
                 let vc = PaygateViewController.make { [weak window] in
 //                    window?.rootViewController = MainViewController.make() // TODO
