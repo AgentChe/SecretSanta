@@ -86,6 +86,11 @@
 		DE3C031F2EDB1B0800EB2633 /* SecretSantasTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C031E2EDB1B0800EB2633 /* SecretSantasTableElement.swift */; };
 		DE3C03212EDB247C00EB2633 /* SecretSantaCheckinCompleted.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03202EDB247C00EB2633 /* SecretSantaCheckinCompleted.swift */; };
 		DE3C03232EDB27AB00EB2633 /* SecretSantaParticipientsCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03222EDB27AB00EB2633 /* SecretSantaParticipientsCount.swift */; };
+		DE3C03272EDB2F3200EB2633 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03262EDB2F3200EB2633 /* MainViewController.swift */; };
+		DE3C03292EDB2F3800EB2633 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03282EDB2F3800EB2633 /* MainView.swift */; };
+		DE3C032B2EDB2F3E00EB2633 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C032A2EDB2F3E00EB2633 /* MainCoordinator.swift */; };
+		DE3C032F2EDB2F5F00EB2633 /* MainTabItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C032E2EDB2F5F00EB2633 /* MainTabItemButton.swift */; };
+		DE3C03312EDB2F6700EB2633 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03302EDB2F6700EB2633 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -171,6 +176,11 @@
 		DE3C031E2EDB1B0800EB2633 /* SecretSantasTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantasTableElement.swift; sourceTree = "<group>"; };
 		DE3C03202EDB247C00EB2633 /* SecretSantaCheckinCompleted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaCheckinCompleted.swift; sourceTree = "<group>"; };
 		DE3C03222EDB27AB00EB2633 /* SecretSantaParticipientsCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaParticipientsCount.swift; sourceTree = "<group>"; };
+		DE3C03262EDB2F3200EB2633 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DE3C03282EDB2F3800EB2633 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DE3C032A2EDB2F3E00EB2633 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		DE3C032E2EDB2F5F00EB2633 /* MainTabItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabItemButton.swift; sourceTree = "<group>"; };
+		DE3C03302EDB2F6700EB2633 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		F428807A07E3A5C4371704A2 /* Pods-SecretSanta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretSanta.release.xcconfig"; path = "Target Support Files/Pods-SecretSanta/Pods-SecretSanta.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -393,6 +403,7 @@
 		DE3C02532ED7053C00EB2633 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DE3C03242EDB2F1500EB2633 /* Main */,
 				DE3C030B2EDB101200EB2633 /* SecretSanta */,
 				DE3C02332ED7053C00EB2633 /* Splash */,
 			);
@@ -579,6 +590,42 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		DE3C03242EDB2F1500EB2633 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C03252EDB2F2A00EB2633 /* Main */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DE3C03252EDB2F2A00EB2633 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C032C2EDB2F5600EB2633 /* Views */,
+				DE3C03262EDB2F3200EB2633 /* MainViewController.swift */,
+				DE3C03282EDB2F3800EB2633 /* MainView.swift */,
+				DE3C032A2EDB2F3E00EB2633 /* MainCoordinator.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DE3C032C2EDB2F5600EB2633 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C032D2EDB2F5900EB2633 /* Tab */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE3C032D2EDB2F5900EB2633 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C032E2EDB2F5F00EB2633 /* MainTabItemButton.swift */,
+				DE3C03302EDB2F6700EB2633 /* MainTabView.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -711,11 +758,14 @@
 				DE3C03182EDB18B900EB2633 /* SecretSantasTableView.swift in Sources */,
 				DE3C026C2ED7053C00EB2633 /* ProductPrice.swift in Sources */,
 				DE3C02DE2ED70A8700EB2633 /* Appearance.swift in Sources */,
+				DE3C032F2EDB2F5F00EB2633 /* MainTabItemButton.swift in Sources */,
 				DE3C026E2ED7053C00EB2633 /* PaddingLabel.swift in Sources */,
 				DE3C02712ED7053C00EB2633 /* UIView+RxExtension.swift in Sources */,
 				DE3C02732ED7053C00EB2633 /* NumberLaunches.swift in Sources */,
+				DE3C03272EDB2F3200EB2633 /* MainViewController.swift in Sources */,
 				DE3C03232EDB27AB00EB2633 /* SecretSantaParticipientsCount.swift in Sources */,
 				DE3C02762ED7053C00EB2633 /* NavigationController.swift in Sources */,
+				DE3C03312EDB2F6700EB2633 /* MainTabView.swift in Sources */,
 				DE3C02792ED7053C00EB2633 /* SignError.swift in Sources */,
 				DE3C027B2ED7053C00EB2633 /* SceneDelegate.swift in Sources */,
 				DE3C027D2ED7053C00EB2633 /* AppDelegate.swift in Sources */,
@@ -725,6 +775,7 @@
 				DE3C02802ED7053C00EB2633 /* RequestReview.swift in Sources */,
 				DE3C02812ED7053C00EB2633 /* RxActivityIndicator.swift in Sources */,
 				DE3C03102EDB107200EB2633 /* SecretSantasViewModel.swift in Sources */,
+				DE3C03292EDB2F3800EB2633 /* MainView.swift in Sources */,
 				DE3C02822ED7053C00EB2633 /* TapAreaButton.swift in Sources */,
 				DE3C02832ED7053C00EB2633 /* PaddingTextField.swift in Sources */,
 				DE3C02842ED7053C00EB2633 /* ObservableAndSingle+Extension.swift in Sources */,
@@ -748,6 +799,7 @@
 				DE3C029F2ED7053C00EB2633 /* SessionManager.swift in Sources */,
 				DE3C02A02ED7053C00EB2633 /* NetworkError.swift in Sources */,
 				DE3C02A22ED7053C00EB2633 /* SplashView.swift in Sources */,
+				DE3C032B2EDB2F3E00EB2633 /* MainCoordinator.swift in Sources */,
 				DE3C030A2EDB0D2D00EB2633 /* SecretSantaMediator.swift in Sources */,
 				DE3C02A42ED7053C00EB2633 /* GradientView.swift in Sources */,
 				DE3C02A52ED7053C00EB2633 /* String+Extension.swift in Sources */,

@@ -54,11 +54,10 @@ private extension SplashViewController {
             }
             
             if SessionManager().hasActiveSubscriptions() {
-//                window.rootViewController = MainViewController.make() // TODO
-                window.rootViewController = SecretSantasViewController.make() // TODO: delete
+                window.rootViewController = MainViewController.make()
             } else {
                 let vc = PaygateViewController.make { [weak window] in
-//                    window?.rootViewController = MainViewController.make() // TODO
+                    window?.rootViewController = MainViewController.make() 
                 }
                 self?.present(vc, animated: true)
             }
