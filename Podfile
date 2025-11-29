@@ -8,6 +8,8 @@ target 'SecretSanta' do
   pod 'RxSwift'
   pod 'RxCocoa'
   
+  pod 'GRDB.swift'
+  
   pod 'SwiftyStoreKit'
 
   pod 'OtterScaleiOS', :git => "https://github.com/AgentChe/OtterScaleiOS.git"

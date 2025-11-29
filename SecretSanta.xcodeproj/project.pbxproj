@@ -74,6 +74,9 @@
 		DE3C02EE2ED7206300EB2633 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C02EB2ED7206300EB2633 /* OnboardingView.swift */; };
 		DE3C02EF2ED7206300EB2633 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C02EC2ED7206300EB2633 /* OnboardingViewController.swift */; };
 		DE3C02F02ED7206300EB2633 /* OIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C02E92ED7206300EB2633 /* OIntroView.swift */; };
+		DE3C03042ED9FC6600EB2633 /* SecretSanta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03032ED9FC6600EB2633 /* SecretSanta.swift */; };
+		DE3C03062ED9FFFE00EB2633 /* SecretSantaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03052ED9FFFE00EB2633 /* SecretSantaManager.swift */; };
+		DE3C030A2EDB0D2D00EB2633 /* SecretSantaMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03092EDB0D2D00EB2633 /* SecretSantaMediator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,6 +150,9 @@
 		DE3C02E92ED7206300EB2633 /* OIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OIntroView.swift; sourceTree = "<group>"; };
 		DE3C02EB2ED7206300EB2633 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		DE3C02EC2ED7206300EB2633 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		DE3C03032ED9FC6600EB2633 /* SecretSanta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSanta.swift; sourceTree = "<group>"; };
+		DE3C03052ED9FFFE00EB2633 /* SecretSantaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaManager.swift; sourceTree = "<group>"; };
+		DE3C03092EDB0D2D00EB2633 /* SecretSantaMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaMediator.swift; sourceTree = "<group>"; };
 		F428807A07E3A5C4371704A2 /* Pods-SecretSanta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretSanta.release.xcconfig"; path = "Target Support Files/Pods-SecretSanta/Pods-SecretSanta.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -415,6 +421,7 @@
 		DE3C02652ED7053C00EB2633 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DE3C02FF2ED9A93B00EB2633 /* SecretSanta */,
 				DE3C025D2ED7053C00EB2633 /* Purchase */,
 				DE3C025F2ED7053C00EB2633 /* Session */,
 			);
@@ -493,6 +500,24 @@
 				DE3C02EB2ED7206300EB2633 /* OnboardingView.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		DE3C02FF2ED9A93B00EB2633 /* SecretSanta */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C03002ED9A94800EB2633 /* Model */,
+				DE3C03052ED9FFFE00EB2633 /* SecretSantaManager.swift */,
+				DE3C03092EDB0D2D00EB2633 /* SecretSantaMediator.swift */,
+			);
+			path = SecretSanta;
+			sourceTree = "<group>";
+		};
+		DE3C03002ED9A94800EB2633 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C03032ED9FC6600EB2633 /* SecretSanta.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -648,6 +673,7 @@
 				DE3C02902ED7053C00EB2633 /* PaygateViewController.swift in Sources */,
 				DE3C02912ED7053C00EB2633 /* TextAttributes.swift in Sources */,
 				DE3C02962ED7053C00EB2633 /* Fonts.swift in Sources */,
+				DE3C03042ED9FC6600EB2633 /* SecretSanta.swift in Sources */,
 				DE3C02972ED7053C00EB2633 /* PaygateView.swift in Sources */,
 				DE3C02982ED7053C00EB2633 /* UIApplication+Extension.swift in Sources */,
 				DE3C02992ED7053C00EB2633 /* PaygateBestOfferView.swift in Sources */,
@@ -658,6 +684,7 @@
 				DE3C029F2ED7053C00EB2633 /* SessionManager.swift in Sources */,
 				DE3C02A02ED7053C00EB2633 /* NetworkError.swift in Sources */,
 				DE3C02A22ED7053C00EB2633 /* SplashView.swift in Sources */,
+				DE3C030A2EDB0D2D00EB2633 /* SecretSantaMediator.swift in Sources */,
 				DE3C02A42ED7053C00EB2633 /* GradientView.swift in Sources */,
 				DE3C02A52ED7053C00EB2633 /* String+Extension.swift in Sources */,
 				DE3C02A72ED7053C00EB2633 /* IAPError.swift in Sources */,
@@ -676,6 +703,7 @@
 				DE3C02EE2ED7206300EB2633 /* OnboardingView.swift in Sources */,
 				DE3C02EF2ED7206300EB2633 /* OnboardingViewController.swift in Sources */,
 				DE3C02F02ED7206300EB2633 /* OIntroView.swift in Sources */,
+				DE3C03062ED9FFFE00EB2633 /* SecretSantaManager.swift in Sources */,
 				DE3C02BC2ED7053C00EB2633 /* PaygateInteractor.swift in Sources */,
 				DE3C02BD2ED7053C00EB2633 /* UIColor+Extension.swift in Sources */,
 			);
