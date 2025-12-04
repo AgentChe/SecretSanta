@@ -91,6 +91,36 @@
 		DE3C032B2EDB2F3E00EB2633 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C032A2EDB2F3E00EB2633 /* MainCoordinator.swift */; };
 		DE3C032F2EDB2F5F00EB2633 /* MainTabItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C032E2EDB2F5F00EB2633 /* MainTabItemButton.swift */; };
 		DE3C03312EDB2F6700EB2633 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03302EDB2F6700EB2633 /* MainTabView.swift */; };
+		DE3C03342EDB3C6000EB2633 /* CreateSecretSantaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03332EDB3C6000EB2633 /* CreateSecretSantaViewController.swift */; };
+		DE3C03382EDB3C6B00EB2633 /* CreateSecretSantaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C03372EDB3C6B00EB2633 /* CreateSecretSantaView.swift */; };
+		DE3C033D2EDB410100EB2633 /* CSSProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C033C2EDB410100EB2633 /* CSSProgressView.swift */; };
+		DE3C033F2EDB42AF00EB2633 /* CSSNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3C033E2EDB42AF00EB2633 /* CSSNavigationView.swift */; };
+		DE3F30B12EDCA03D00453818 /* CSSCreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30B02EDCA03D00453818 /* CSSCreateViewModel.swift */; };
+		DE3F30B32EDCA04100453818 /* CSSCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30B22EDCA04100453818 /* CSSCreateView.swift */; };
+		DE3F30B92EDCAEEE00453818 /* CSSParticipientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30B82EDCAEEE00453818 /* CSSParticipientsView.swift */; };
+		DE3F30BB2EDCAEFA00453818 /* CSSParticipientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30BA2EDCAEFA00453818 /* CSSParticipientsViewModel.swift */; };
+		DE3F30BE2EDCB38A00453818 /* CSSParticipientsAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30BD2EDCB38A00453818 /* CSSParticipientsAddButton.swift */; };
+		DE3F30C12EDCB5FE00453818 /* CSSParticipientsTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30C02EDCB5FE00453818 /* CSSParticipientsTableElement.swift */; };
+		DE3F30C32EDCB60A00453818 /* CSSParticipientsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30C22EDCB60A00453818 /* CSSParticipientsTableView.swift */; };
+		DE3F30C62EDCB66C00453818 /* CSSParticipientsTableDummyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30C52EDCB66C00453818 /* CSSParticipientsTableDummyCell.swift */; };
+		DE3F30C82EDCB67500453818 /* CSSParticipientsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30C72EDCB67500453818 /* CSSParticipientsTableCell.swift */; };
+		DE3F30CB2EDDC0BA00453818 /* ParticipientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30CA2EDDC0BA00453818 /* ParticipientViewController.swift */; };
+		DE3F30CD2EDDC13200453818 /* ParticipientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30CC2EDDC13200453818 /* ParticipientViewModel.swift */; };
+		DE3F30CF2EDDC13600453818 /* ParticipientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30CE2EDDC13600453818 /* ParticipientView.swift */; };
+		DE3F30D22EDEFADB00453818 /* CSSExcludePairsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30D12EDEFADB00453818 /* CSSExcludePairsView.swift */; };
+		DE3F30D42EDEFAE100453818 /* CSSExcludePairsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30D32EDEFAE100453818 /* CSSExcludePairsViewModel.swift */; };
+		DE3F30D82EDF022700453818 /* CSSExcludePairsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30D72EDF022700453818 /* CSSExcludePairsTableView.swift */; };
+		DE3F30DA2EDF022E00453818 /* CSSExcludePairsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30D92EDF022E00453818 /* CSSExcludePairsTableCell.swift */; };
+		DE3F30DC2EDF023500453818 /* CSSExcludePairsTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30DB2EDF023500453818 /* CSSExcludePairsTableElement.swift */; };
+		DE3F30DF2EE1DA8F00453818 /* ExcludePairsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30DE2EE1DA8F00453818 /* ExcludePairsView.swift */; };
+		DE3F30E22EE1DA9B00453818 /* ExcludePairsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30E12EE1DA9B00453818 /* ExcludePairsCollectionView.swift */; };
+		DE3F30E42EE1DAA500453818 /* ExcludePairsCollectionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30E32EE1DAA500453818 /* ExcludePairsCollectionElement.swift */; };
+		DE3F30E72EE1DABA00453818 /* ExcludePairsCollectionPairCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30E62EE1DABA00453818 /* ExcludePairsCollectionPairCell.swift */; };
+		DE3F30E92EE1DAEC00453818 /* ExcludePairsGoingToSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30E82EE1DAEC00453818 /* ExcludePairsGoingToSelectCell.swift */; };
+		DE3F30EC2EE1FD5900453818 /* CSSMatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30EB2EE1FD5900453818 /* CSSMatchesView.swift */; };
+		DE3F30EE2EE1FD7F00453818 /* CSSMatchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30ED2EE1FD7F00453818 /* CSSMatchesViewModel.swift */; };
+		DE3F30F12EE2051D00453818 /* Perandory-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE3F30F02EE2051D00453818 /* Perandory-Regular.otf */; };
+		DE3F30F42EE2089500453818 /* CSSFinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F30F32EE2089500453818 /* CSSFinishView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -181,6 +211,36 @@
 		DE3C032A2EDB2F3E00EB2633 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		DE3C032E2EDB2F5F00EB2633 /* MainTabItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabItemButton.swift; sourceTree = "<group>"; };
 		DE3C03302EDB2F6700EB2633 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		DE3C03332EDB3C6000EB2633 /* CreateSecretSantaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSecretSantaViewController.swift; sourceTree = "<group>"; };
+		DE3C03372EDB3C6B00EB2633 /* CreateSecretSantaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSecretSantaView.swift; sourceTree = "<group>"; };
+		DE3C033C2EDB410100EB2633 /* CSSProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSProgressView.swift; sourceTree = "<group>"; };
+		DE3C033E2EDB42AF00EB2633 /* CSSNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSNavigationView.swift; sourceTree = "<group>"; };
+		DE3F30B02EDCA03D00453818 /* CSSCreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSCreateViewModel.swift; sourceTree = "<group>"; };
+		DE3F30B22EDCA04100453818 /* CSSCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSCreateView.swift; sourceTree = "<group>"; };
+		DE3F30B82EDCAEEE00453818 /* CSSParticipientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSParticipientsView.swift; sourceTree = "<group>"; };
+		DE3F30BA2EDCAEFA00453818 /* CSSParticipientsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSParticipientsViewModel.swift; sourceTree = "<group>"; };
+		DE3F30BD2EDCB38A00453818 /* CSSParticipientsAddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSParticipientsAddButton.swift; sourceTree = "<group>"; };
+		DE3F30C02EDCB5FE00453818 /* CSSParticipientsTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSParticipientsTableElement.swift; sourceTree = "<group>"; };
+		DE3F30C22EDCB60A00453818 /* CSSParticipientsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSParticipientsTableView.swift; sourceTree = "<group>"; };
+		DE3F30C52EDCB66C00453818 /* CSSParticipientsTableDummyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSParticipientsTableDummyCell.swift; sourceTree = "<group>"; };
+		DE3F30C72EDCB67500453818 /* CSSParticipientsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSParticipientsTableCell.swift; sourceTree = "<group>"; };
+		DE3F30CA2EDDC0BA00453818 /* ParticipientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipientViewController.swift; sourceTree = "<group>"; };
+		DE3F30CC2EDDC13200453818 /* ParticipientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipientViewModel.swift; sourceTree = "<group>"; };
+		DE3F30CE2EDDC13600453818 /* ParticipientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipientView.swift; sourceTree = "<group>"; };
+		DE3F30D12EDEFADB00453818 /* CSSExcludePairsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSExcludePairsView.swift; sourceTree = "<group>"; };
+		DE3F30D32EDEFAE100453818 /* CSSExcludePairsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSExcludePairsViewModel.swift; sourceTree = "<group>"; };
+		DE3F30D72EDF022700453818 /* CSSExcludePairsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSExcludePairsTableView.swift; sourceTree = "<group>"; };
+		DE3F30D92EDF022E00453818 /* CSSExcludePairsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSExcludePairsTableCell.swift; sourceTree = "<group>"; };
+		DE3F30DB2EDF023500453818 /* CSSExcludePairsTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSExcludePairsTableElement.swift; sourceTree = "<group>"; };
+		DE3F30DE2EE1DA8F00453818 /* ExcludePairsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludePairsView.swift; sourceTree = "<group>"; };
+		DE3F30E12EE1DA9B00453818 /* ExcludePairsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludePairsCollectionView.swift; sourceTree = "<group>"; };
+		DE3F30E32EE1DAA500453818 /* ExcludePairsCollectionElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludePairsCollectionElement.swift; sourceTree = "<group>"; };
+		DE3F30E62EE1DABA00453818 /* ExcludePairsCollectionPairCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludePairsCollectionPairCell.swift; sourceTree = "<group>"; };
+		DE3F30E82EE1DAEC00453818 /* ExcludePairsGoingToSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcludePairsGoingToSelectCell.swift; sourceTree = "<group>"; };
+		DE3F30EB2EE1FD5900453818 /* CSSMatchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSMatchesView.swift; sourceTree = "<group>"; };
+		DE3F30ED2EE1FD7F00453818 /* CSSMatchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSMatchesViewModel.swift; sourceTree = "<group>"; };
+		DE3F30F02EE2051D00453818 /* Perandory-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Perandory-Regular.otf"; sourceTree = "<group>"; };
+		DE3F30F32EE2089500453818 /* CSSFinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSSFinishView.swift; sourceTree = "<group>"; };
 		F428807A07E3A5C4371704A2 /* Pods-SecretSanta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretSanta.release.xcconfig"; path = "Target Support Files/Pods-SecretSanta/Pods-SecretSanta.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -471,6 +531,7 @@
 		DE3C02C92ED7054300EB2633 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				DE3F30EF2EE2051500453818 /* Perandory */,
 				DE3C02DF2ED712FB00EB2633 /* PlayfairDisplay */,
 				DE3C02D82ED709F700EB2633 /* CinzelDecorative */,
 				DE3C02D52ED7077000EB2633 /* NewYork */,
@@ -555,6 +616,7 @@
 		DE3C030B2EDB101200EB2633 /* SecretSanta */ = {
 			isa = PBXGroup;
 			children = (
+				DE3C03322EDB3C5600EB2633 /* CreateSecretSanta */,
 				DE3C030C2EDB105B00EB2633 /* SecretSantas */,
 			);
 			path = SecretSanta;
@@ -626,6 +688,178 @@
 			path = Tab;
 			sourceTree = "<group>";
 		};
+		DE3C03322EDB3C5600EB2633 /* CreateSecretSanta */ = {
+			isa = PBXGroup;
+			children = (
+				DE3C033B2EDB40EC00EB2633 /* Views */,
+				DE3C03332EDB3C6000EB2633 /* CreateSecretSantaViewController.swift */,
+				DE3C03372EDB3C6B00EB2633 /* CreateSecretSantaView.swift */,
+			);
+			path = CreateSecretSanta;
+			sourceTree = "<group>";
+		};
+		DE3C033B2EDB40EC00EB2633 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30B42EDCA84D00453818 /* Onb */,
+				DE3C033C2EDB410100EB2633 /* CSSProgressView.swift */,
+				DE3C033E2EDB42AF00EB2633 /* CSSNavigationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE3F30AD2EDCA02600453818 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30B22EDCA04100453818 /* CSSCreateView.swift */,
+				DE3F30B02EDCA03D00453818 /* CSSCreateViewModel.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		DE3F30B42EDCA84D00453818 /* Onb */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30F22EE2088D00453818 /* Finish */,
+				DE3F30EA2EE1FD4D00453818 /* Matches */,
+				DE3F30D02EDEFACD00453818 /* ExcludePairs */,
+				DE3F30C92EDDC0AC00453818 /* Participient */,
+				DE3F30B72EDCAEE500453818 /* Participients */,
+				DE3F30AD2EDCA02600453818 /* Create */,
+			);
+			path = Onb;
+			sourceTree = "<group>";
+		};
+		DE3F30B72EDCAEE500453818 /* Participients */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30BC2EDCB37F00453818 /* Views */,
+				DE3F30B82EDCAEEE00453818 /* CSSParticipientsView.swift */,
+				DE3F30BA2EDCAEFA00453818 /* CSSParticipientsViewModel.swift */,
+			);
+			path = Participients;
+			sourceTree = "<group>";
+		};
+		DE3F30BC2EDCB37F00453818 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30BF2EDCB5B300453818 /* TableView */,
+				DE3F30BD2EDCB38A00453818 /* CSSParticipientsAddButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE3F30BF2EDCB5B300453818 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30C42EDCB60E00453818 /* Cells */,
+				DE3F30C02EDCB5FE00453818 /* CSSParticipientsTableElement.swift */,
+				DE3F30C22EDCB60A00453818 /* CSSParticipientsTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DE3F30C42EDCB60E00453818 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30C52EDCB66C00453818 /* CSSParticipientsTableDummyCell.swift */,
+				DE3F30C72EDCB67500453818 /* CSSParticipientsTableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DE3F30C92EDDC0AC00453818 /* Participient */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30CA2EDDC0BA00453818 /* ParticipientViewController.swift */,
+				DE3F30CC2EDDC13200453818 /* ParticipientViewModel.swift */,
+				DE3F30CE2EDDC13600453818 /* ParticipientView.swift */,
+			);
+			path = Participient;
+			sourceTree = "<group>";
+		};
+		DE3F30D02EDEFACD00453818 /* ExcludePairs */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30D52EDF011300453818 /* Views */,
+				DE3F30D12EDEFADB00453818 /* CSSExcludePairsView.swift */,
+				DE3F30D32EDEFAE100453818 /* CSSExcludePairsViewModel.swift */,
+			);
+			path = ExcludePairs;
+			sourceTree = "<group>";
+		};
+		DE3F30D52EDF011300453818 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30DD2EE1DA7400453818 /* ExcludePairs */,
+				DE3F30D62EDF011800453818 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE3F30D62EDF011800453818 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30D72EDF022700453818 /* CSSExcludePairsTableView.swift */,
+				DE3F30D92EDF022E00453818 /* CSSExcludePairsTableCell.swift */,
+				DE3F30DB2EDF023500453818 /* CSSExcludePairsTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DE3F30DD2EE1DA7400453818 /* ExcludePairs */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30E02EE1DA9200453818 /* CollectionView */,
+				DE3F30DE2EE1DA8F00453818 /* ExcludePairsView.swift */,
+			);
+			path = ExcludePairs;
+			sourceTree = "<group>";
+		};
+		DE3F30E02EE1DA9200453818 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30E52EE1DAA700453818 /* Cells */,
+				DE3F30E12EE1DA9B00453818 /* ExcludePairsCollectionView.swift */,
+				DE3F30E32EE1DAA500453818 /* ExcludePairsCollectionElement.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DE3F30E52EE1DAA700453818 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30E62EE1DABA00453818 /* ExcludePairsCollectionPairCell.swift */,
+				DE3F30E82EE1DAEC00453818 /* ExcludePairsGoingToSelectCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DE3F30EA2EE1FD4D00453818 /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30EB2EE1FD5900453818 /* CSSMatchesView.swift */,
+				DE3F30ED2EE1FD7F00453818 /* CSSMatchesViewModel.swift */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		DE3F30EF2EE2051500453818 /* Perandory */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30F02EE2051D00453818 /* Perandory-Regular.otf */,
+			);
+			path = Perandory;
+			sourceTree = "<group>";
+		};
+		DE3F30F22EE2088D00453818 /* Finish */ = {
+			isa = PBXGroup;
+			children = (
+				DE3F30F32EE2089500453818 /* CSSFinishView.swift */,
+			);
+			path = Finish;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -694,6 +928,7 @@
 				DE3C01E52ED703A200EB2633 /* Assets.xcassets in Resources */,
 				DE3C01E72ED703A200EB2633 /* LaunchScreen.storyboard in Resources */,
 				DE3C02E32ED7132200EB2633 /* PlayfairDisplay-Regular.ttf in Resources */,
+				DE3F30F12EE2051D00453818 /* Perandory-Regular.otf in Resources */,
 				DE3C02E42ED7132200EB2633 /* PlayfairDisplay-SemiBold.ttf in Resources */,
 				DE3C02E52ED7132200EB2633 /* PlayfairDisplay-Bold.ttf in Resources */,
 				DE3C02DA2ED70A0600EB2633 /* CinzelDecorative-Bold.ttf in Resources */,
@@ -754,12 +989,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3F30C62EDCB66C00453818 /* CSSParticipientsTableDummyCell.swift in Sources */,
 				DE3C026B2ED7053C00EB2633 /* PaygateEnableTrialButton.swift in Sources */,
 				DE3C03182EDB18B900EB2633 /* SecretSantasTableView.swift in Sources */,
 				DE3C026C2ED7053C00EB2633 /* ProductPrice.swift in Sources */,
+				DE3F30DC2EDF023500453818 /* CSSExcludePairsTableElement.swift in Sources */,
 				DE3C02DE2ED70A8700EB2633 /* Appearance.swift in Sources */,
 				DE3C032F2EDB2F5F00EB2633 /* MainTabItemButton.swift in Sources */,
+				DE3C033D2EDB410100EB2633 /* CSSProgressView.swift in Sources */,
+				DE3F30B32EDCA04100453818 /* CSSCreateView.swift in Sources */,
 				DE3C026E2ED7053C00EB2633 /* PaddingLabel.swift in Sources */,
+				DE3F30B92EDCAEEE00453818 /* CSSParticipientsView.swift in Sources */,
 				DE3C02712ED7053C00EB2633 /* UIView+RxExtension.swift in Sources */,
 				DE3C02732ED7053C00EB2633 /* NumberLaunches.swift in Sources */,
 				DE3C03272EDB2F3200EB2633 /* MainViewController.swift in Sources */,
@@ -768,15 +1008,23 @@
 				DE3C03312EDB2F6700EB2633 /* MainTabView.swift in Sources */,
 				DE3C02792ED7053C00EB2633 /* SignError.swift in Sources */,
 				DE3C027B2ED7053C00EB2633 /* SceneDelegate.swift in Sources */,
+				DE3F30C32EDCB60A00453818 /* CSSParticipientsTableView.swift in Sources */,
 				DE3C027D2ED7053C00EB2633 /* AppDelegate.swift in Sources */,
 				DE3C027E2ED7053C00EB2633 /* GlobalDefinitions.swift in Sources */,
+				DE3F30E22EE1DA9B00453818 /* ExcludePairsCollectionView.swift in Sources */,
 				DE3C027F2ED7053C00EB2633 /* NavigationControllerSettings.swift in Sources */,
 				DE3C03152EDB127B00EB2633 /* SecretSantasEmptyView.swift in Sources */,
+				DE3F30D42EDEFAE100453818 /* CSSExcludePairsViewModel.swift in Sources */,
+				DE3F30C12EDCB5FE00453818 /* CSSParticipientsTableElement.swift in Sources */,
+				DE3F30C82EDCB67500453818 /* CSSParticipientsTableCell.swift in Sources */,
 				DE3C02802ED7053C00EB2633 /* RequestReview.swift in Sources */,
 				DE3C02812ED7053C00EB2633 /* RxActivityIndicator.swift in Sources */,
+				DE3F30E72EE1DABA00453818 /* ExcludePairsCollectionPairCell.swift in Sources */,
 				DE3C03102EDB107200EB2633 /* SecretSantasViewModel.swift in Sources */,
 				DE3C03292EDB2F3800EB2633 /* MainView.swift in Sources */,
 				DE3C02822ED7053C00EB2633 /* TapAreaButton.swift in Sources */,
+				DE3F30CD2EDDC13200453818 /* ParticipientViewModel.swift in Sources */,
+				DE3F30B12EDCA03D00453818 /* CSSCreateViewModel.swift in Sources */,
 				DE3C02832ED7053C00EB2633 /* PaddingTextField.swift in Sources */,
 				DE3C02842ED7053C00EB2633 /* ObservableAndSingle+Extension.swift in Sources */,
 				DE3C02892ED7053C00EB2633 /* PaygateProductButton.swift in Sources */,
@@ -788,10 +1036,13 @@
 				DE3C02902ED7053C00EB2633 /* PaygateViewController.swift in Sources */,
 				DE3C02912ED7053C00EB2633 /* TextAttributes.swift in Sources */,
 				DE3C02962ED7053C00EB2633 /* Fonts.swift in Sources */,
+				DE3F30E42EE1DAA500453818 /* ExcludePairsCollectionElement.swift in Sources */,
 				DE3C03042ED9FC6600EB2633 /* SecretSanta.swift in Sources */,
+				DE3C03342EDB3C6000EB2633 /* CreateSecretSantaViewController.swift in Sources */,
 				DE3C02972ED7053C00EB2633 /* PaygateView.swift in Sources */,
 				DE3C02982ED7053C00EB2633 /* UIApplication+Extension.swift in Sources */,
 				DE3C02992ED7053C00EB2633 /* PaygateBestOfferView.swift in Sources */,
+				DE3F30D82EDF022700453818 /* CSSExcludePairsTableView.swift in Sources */,
 				DE3C029A2ED7053C00EB2633 /* PaygateViewModel.swift in Sources */,
 				DE3C029B2ED7053C00EB2633 /* UIEdgeInsets+Extension.swift in Sources */,
 				DE3C029D2ED7053C00EB2633 /* ContentError.swift in Sources */,
@@ -799,31 +1050,44 @@
 				DE3C029F2ED7053C00EB2633 /* SessionManager.swift in Sources */,
 				DE3C02A02ED7053C00EB2633 /* NetworkError.swift in Sources */,
 				DE3C02A22ED7053C00EB2633 /* SplashView.swift in Sources */,
+				DE3C03382EDB3C6B00EB2633 /* CreateSecretSantaView.swift in Sources */,
+				DE3F30D22EDEFADB00453818 /* CSSExcludePairsView.swift in Sources */,
+				DE3F30BB2EDCAEFA00453818 /* CSSParticipientsViewModel.swift in Sources */,
+				DE3F30BE2EDCB38A00453818 /* CSSParticipientsAddButton.swift in Sources */,
+				DE3F30CF2EDDC13600453818 /* ParticipientView.swift in Sources */,
 				DE3C032B2EDB2F3E00EB2633 /* MainCoordinator.swift in Sources */,
 				DE3C030A2EDB0D2D00EB2633 /* SecretSantaMediator.swift in Sources */,
 				DE3C02A42ED7053C00EB2633 /* GradientView.swift in Sources */,
 				DE3C02A52ED7053C00EB2633 /* String+Extension.swift in Sources */,
 				DE3C02A72ED7053C00EB2633 /* IAPError.swift in Sources */,
+				DE3F30DA2EDF022E00453818 /* CSSExcludePairsTableCell.swift in Sources */,
 				DE3C02A82ED7053C00EB2633 /* SplashReceiptValidationObserver.swift in Sources */,
 				DE3C02A92ED7053C00EB2633 /* ScreenSize.swift in Sources */,
+				DE3F30DF2EE1DA8F00453818 /* ExcludePairsView.swift in Sources */,
 				DE3C03122EDB107600EB2633 /* SecretSantasView.swift in Sources */,
 				DE3C031A2EDB18C300EB2633 /* SecretSantasTableCell.swift in Sources */,
 				DE3C02AA2ED7053C00EB2633 /* Collection+Extension.swift in Sources */,
 				DE3C02AC2ED7053C00EB2633 /* IAPManager.swift in Sources */,
+				DE3F30EC2EE1FD5900453818 /* CSSMatchesView.swift in Sources */,
 				DE3C02AF2ED7053C00EB2633 /* Currency.swift in Sources */,
 				DE3C02B12ED7053C00EB2633 /* IAPProduct.swift in Sources */,
 				DE3C02B22ED7053C00EB2633 /* PurchaseValidationObserver.swift in Sources */,
+				DE3F30CB2EDDC0BA00453818 /* ParticipientViewController.swift in Sources */,
 				DE3C03212EDB247C00EB2633 /* SecretSantaCheckinCompleted.swift in Sources */,
 				DE3C02B62ED7053C00EB2633 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				DE3C02B72ED7053C00EB2633 /* PaygateActionsView.swift in Sources */,
+				DE3F30EE2EE1FD7F00453818 /* CSSMatchesViewModel.swift in Sources */,
 				DE3C02B82ED7053C00EB2633 /* IAPErrorHelper.swift in Sources */,
 				DE3C02BB2ED7053C00EB2633 /* SplashViewController.swift in Sources */,
+				DE3C033F2EDB42AF00EB2633 /* CSSNavigationView.swift in Sources */,
 				DE3C02E72ED7147900EB2633 /* GradientButton.swift in Sources */,
 				DE3C02EE2ED7206300EB2633 /* OnboardingView.swift in Sources */,
 				DE3C02EF2ED7206300EB2633 /* OnboardingViewController.swift in Sources */,
 				DE3C02F02ED7206300EB2633 /* OIntroView.swift in Sources */,
 				DE3C03062ED9FFFE00EB2633 /* SecretSantaManager.swift in Sources */,
+				DE3F30E92EE1DAEC00453818 /* ExcludePairsGoingToSelectCell.swift in Sources */,
 				DE3C02BC2ED7053C00EB2633 /* PaygateInteractor.swift in Sources */,
+				DE3F30F42EE2089500453818 /* CSSFinishView.swift in Sources */,
 				DE3C030E2EDB106C00EB2633 /* SecretSantasViewController.swift in Sources */,
 				DE3C02BD2ED7053C00EB2633 /* UIColor+Extension.swift in Sources */,
 			);

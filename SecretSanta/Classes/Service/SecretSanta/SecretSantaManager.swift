@@ -13,7 +13,7 @@ protocol SecretSantaProtocol {
     func fetchSecretSantas() -> Single<[SecretSanta]>
     func createParticipient(secretSantaId: String, name: String, email: String) -> Single<Participient>
     func editParticipient(id: String, secretSantaId: String, name: String, email: String) -> Single<Participient>
-    func deleteParticipient(id: String) -> Single<Void>
+    func deleteParticipient(id: String) -> Single<String>
     func fetchParticipents(secretSantaId: String) -> Single<[Participient]>
     func fetchParticipents() -> Single<[Participient]>
     func createExcludePair(secretSantaId: String, participientOneId: String, participientTwoId: String) -> Single<ExcludePair>
@@ -165,7 +165,7 @@ extension SecretSantaManager: SecretSantaProtocol {
         }
     }
 
-    func deleteParticipient(id: String) -> Single<Void> {
+    func deleteParticipient(id: String) -> Single<String> {
         Single.create { [weak self] single in
             guard let dbQueue = self?.dbQueue else {
                 single(.failure(SecretSantaError.dbNotInitialized))
@@ -176,7 +176,7 @@ extension SecretSantaManager: SecretSantaProtocol {
                 try dbQueue.write { db in
                     _ = try Participient.deleteOne(db, key: id)
                 }
-                single(.success(()))
+                single(.success((id)))
                 
                 SecretSantaMediator.shared.deletedParticipient(id)
             } catch {

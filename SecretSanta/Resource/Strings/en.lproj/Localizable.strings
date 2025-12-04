@@ -62,3 +62,28 @@
 "SecretSantas.CreateEvent" = "Create new event";
 "SecretSantas.ParticipientsCount" = "\n%i invites";
 "SecretSantas.Draft" = "Draft";
+
+// MARK: CSSCreate
+"CSSCreate.Title" = "Name your Secret Santa";
+"CSSCreate.SubTitle" = "Name it after your group, workplace, or favorite hobby";
+"CSSCreate.Placeholder" = "Secret Santa";
+"CSSCreate.Create" = "Create";
+"CSSParticipients.Title" = "Who’s joining?";
+"CSSParticipients.SubTitle" = "Add anyone you want to join — minimum of three people required";
+"CSSParticipients.AddUser" = "Add user %i";
+"CSSParticipients.ConfirmDelete" = "Are you sure you want to delete %@?";
+"CSSExcludePairs.Title" = " Exclude if needed";
+"CSSExcludePairs.SubTitle" = "If certain people shouldn’t match, just tap their names. You can exclude the same person more than once";
+"CSSExcludePairs.Pairs.Title" = "Excluded pairs";
+"CSSExcludePairs.MatchingError" = "An error occurred while generating the pairs. Try removing some of the excluded pairs.";
+"CSSMatches.Title" = "Creating pairs";
+"CSSMatches.SubTitle" = "Santa’s magic shuffles the group and gives everyone a mystery match";
+"CSSFinish.Title" = "Your Secret Santa is all set!";
+"CSSFinish.SubTitle" = "Emails are on the way to all participants. If someone can’t find theirs, remind them to check spam";
+"CSSFinish.RevealNow" = "Reveal now";
+
+// MARK: Participient
+"Participient.Title.Add" = "Add participant";
+"Participient.Title.Edit" = "Edit participant";
+"Participient.Name" = "Name";
+"Participient.Email" = "Email";

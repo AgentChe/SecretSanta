@@ -78,9 +78,11 @@ private extension SecretSantasViewController {
     func action(_ action: SecretSantasViewModel.Action) {
         switch action {
         case .createSecretSanta:
-            break // TODO: open screen
+            let vc = CreateSecretSantaViewController.make()
+            present(vc, animated: true)
         case .editSecretSanta(let id):
-            break // TODO: open screen
+            let vc = CreateSecretSantaViewController.make(secretSantaId: id)
+            present(vc, animated: true)
         case .openSecretSanta(let id):
             break // TODO: open screen
         }

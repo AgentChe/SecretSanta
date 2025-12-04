@@ -59,4 +59,11 @@ struct Fonts {
             UIFont(name: "PlayfairDisplay-Bold", size: size)!
         }
     }
+    
+    // MARK: Perandory
+    struct Perandory {
+        static func regular(size: CGFloat) -> UIFont {
+            UIFont(name: "Perandory-Regular", size: size)!
+        }
+    }
 }

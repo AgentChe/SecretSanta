@@ -135,7 +135,7 @@ private extension OIntroView {
         let view = GradientButton()
         view.setAttributedTitle("Continue".localized.attributed(with: attrs), for: .normal)
         view.gradientLayer.colors = Appearance.main200
-        view.gradientLayer.startPoint = CGPoint(x: 0.4, y: 0)
+        view.gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
         view.gradientLayer.endPoint = CGPoint(x: 0.5, y: 1)
         view.gradientLayer.locations = [
             NSNumber(value: 0),

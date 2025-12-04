@@ -36,7 +36,8 @@ extension MainViewCoordinator {
         case .secretSantas:
             changeVC(on: secretSantasVC)
         case .createSecretSanta:
-            break // TODO: open screen
+            let vc = CreateSecretSantaViewController.make()
+            parentVC?.present(vc, animated: true)
         case .settings:
             changeVC(on: settingsVC)
         case .paygate:

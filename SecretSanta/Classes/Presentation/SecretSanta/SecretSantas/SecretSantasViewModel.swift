@@ -100,12 +100,6 @@ private extension SecretSantasViewModel {
                         }
                     }
             }
-            .map { _ -> [SecretSanta] in
-                // TODO: delete
-                [
-                    SecretSanta(id: "1", name: "Secret Santa")
-                ]
-            }
     }
     
     func makeParticipients() -> Driver<[SecretSantaParticipientsCount]> {

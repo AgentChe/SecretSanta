@@ -8,7 +8,7 @@
 import UIKit
 
 final class OnboardingView: GradientView {
-    enum Slide: Hashable {
+    fileprivate enum Slide: Hashable {
         case create
         case exclude
         case reveal
