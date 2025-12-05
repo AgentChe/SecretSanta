@@ -12,7 +12,7 @@ final class MainViewCoordinator {
         case home, secretSantas, createSecretSanta, settings, paygate
     }
     
-    lazy var homeVC = UIViewController()
+    lazy var homeVC = HomeViewController.make()
     lazy var secretSantasVC = SecretSantasViewController.make()
     lazy var settingsVC = UIViewController()
     

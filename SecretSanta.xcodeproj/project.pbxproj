@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2F902C68CCCE701DB3031973 /* Pods_SecretSanta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52945C7445AB9BF1A908D4E6 /* Pods_SecretSanta.framework */; };
+		DE0567642EE30ED000A93A0D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567632EE30ED000A93A0D /* HomeViewController.swift */; };
+		DE0567682EE30EDA00A93A0D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567672EE30EDA00A93A0D /* HomeView.swift */; };
+		DE05676B2EE312E100A93A0D /* HomeInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05676A2EE312E100A93A0D /* HomeInstructionView.swift */; };
+		DE05676D2EE316E800A93A0D /* HomeShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05676C2EE316E800A93A0D /* HomeShareButton.swift */; };
+		DE0567702EE31A7F00A93A0D /* HomeInstructionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05676F2EE31A7F00A93A0D /* HomeInstructionItemView.swift */; };
 		DE3C01E52ED703A200EB2633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3C01D92ED703A200EB2633 /* Assets.xcassets */; };
 		DE3C01E72ED703A200EB2633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3C01DC2ED703A200EB2633 /* LaunchScreen.storyboard */; };
 		DE3C02682ED7053C00EB2633 /* Paygate.storekit in Resources */ = {isa = PBXBuildFile; fileRef = DE3C02292ED7053C00EB2633 /* Paygate.storekit */; };
@@ -126,6 +131,11 @@
 /* Begin PBXFileReference section */
 		52945C7445AB9BF1A908D4E6 /* Pods_SecretSanta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecretSanta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C984A0743D8831BD2E58BAAA /* Pods-SecretSanta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretSanta.debug.xcconfig"; path = "Target Support Files/Pods-SecretSanta/Pods-SecretSanta.debug.xcconfig"; sourceTree = "<group>"; };
+		DE0567632EE30ED000A93A0D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DE0567672EE30EDA00A93A0D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DE05676A2EE312E100A93A0D /* HomeInstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInstructionView.swift; sourceTree = "<group>"; };
+		DE05676C2EE316E800A93A0D /* HomeShareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeShareButton.swift; sourceTree = "<group>"; };
+		DE05676F2EE31A7F00A93A0D /* HomeInstructionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInstructionItemView.swift; sourceTree = "<group>"; };
 		DE3C01C02ED7039D00EB2633 /* SecretSanta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSanta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3C01D92ED703A200EB2633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE3C01DA2ED703A200EB2633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -271,6 +281,34 @@
 				F428807A07E3A5C4371704A2 /* Pods-SecretSanta.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE0567622EE30EC600A93A0D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DE0567692EE30FDF00A93A0D /* Views */,
+				DE0567632EE30ED000A93A0D /* HomeViewController.swift */,
+				DE0567672EE30EDA00A93A0D /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DE0567692EE30FDF00A93A0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE05676E2EE31A3D00A93A0D /* Instruction */,
+				DE05676C2EE316E800A93A0D /* HomeShareButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE05676E2EE31A3D00A93A0D /* Instruction */ = {
+			isa = PBXGroup;
+			children = (
+				DE05676A2EE312E100A93A0D /* HomeInstructionView.swift */,
+				DE05676F2EE31A7F00A93A0D /* HomeInstructionItemView.swift */,
+			);
+			path = Instruction;
 			sourceTree = "<group>";
 		};
 		DE3C01B72ED7039D00EB2633 = {
@@ -655,6 +693,7 @@
 		DE3C03242EDB2F1500EB2633 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DE0567622EE30EC600A93A0D /* Home */,
 				DE3C03252EDB2F2A00EB2633 /* Main */,
 			);
 			path = Main;
@@ -1011,6 +1050,7 @@
 				DE3F30C32EDCB60A00453818 /* CSSParticipientsTableView.swift in Sources */,
 				DE3C027D2ED7053C00EB2633 /* AppDelegate.swift in Sources */,
 				DE3C027E2ED7053C00EB2633 /* GlobalDefinitions.swift in Sources */,
+				DE05676D2EE316E800A93A0D /* HomeShareButton.swift in Sources */,
 				DE3F30E22EE1DA9B00453818 /* ExcludePairsCollectionView.swift in Sources */,
 				DE3C027F2ED7053C00EB2633 /* NavigationControllerSettings.swift in Sources */,
 				DE3C03152EDB127B00EB2633 /* SecretSantasEmptyView.swift in Sources */,
@@ -1047,6 +1087,7 @@
 				DE3C029B2ED7053C00EB2633 /* UIEdgeInsets+Extension.swift in Sources */,
 				DE3C029D2ED7053C00EB2633 /* ContentError.swift in Sources */,
 				DE3C029E2ED7053C00EB2633 /* Scalable.swift in Sources */,
+				DE05676B2EE312E100A93A0D /* HomeInstructionView.swift in Sources */,
 				DE3C029F2ED7053C00EB2633 /* SessionManager.swift in Sources */,
 				DE3C02A02ED7053C00EB2633 /* NetworkError.swift in Sources */,
 				DE3C02A22ED7053C00EB2633 /* SplashView.swift in Sources */,
@@ -1060,6 +1101,7 @@
 				DE3C02A42ED7053C00EB2633 /* GradientView.swift in Sources */,
 				DE3C02A52ED7053C00EB2633 /* String+Extension.swift in Sources */,
 				DE3C02A72ED7053C00EB2633 /* IAPError.swift in Sources */,
+				DE0567642EE30ED000A93A0D /* HomeViewController.swift in Sources */,
 				DE3F30DA2EDF022E00453818 /* CSSExcludePairsTableCell.swift in Sources */,
 				DE3C02A82ED7053C00EB2633 /* SplashReceiptValidationObserver.swift in Sources */,
 				DE3C02A92ED7053C00EB2633 /* ScreenSize.swift in Sources */,
@@ -1075,11 +1117,13 @@
 				DE3F30CB2EDDC0BA00453818 /* ParticipientViewController.swift in Sources */,
 				DE3C03212EDB247C00EB2633 /* SecretSantaCheckinCompleted.swift in Sources */,
 				DE3C02B62ED7053C00EB2633 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
+				DE0567702EE31A7F00A93A0D /* HomeInstructionItemView.swift in Sources */,
 				DE3C02B72ED7053C00EB2633 /* PaygateActionsView.swift in Sources */,
 				DE3F30EE2EE1FD7F00453818 /* CSSMatchesViewModel.swift in Sources */,
 				DE3C02B82ED7053C00EB2633 /* IAPErrorHelper.swift in Sources */,
 				DE3C02BB2ED7053C00EB2633 /* SplashViewController.swift in Sources */,
 				DE3C033F2EDB42AF00EB2633 /* CSSNavigationView.swift in Sources */,
+				DE0567682EE30EDA00A93A0D /* HomeView.swift in Sources */,
 				DE3C02E72ED7147900EB2633 /* GradientButton.swift in Sources */,
 				DE3C02EE2ED7206300EB2633 /* OnboardingView.swift in Sources */,
 				DE3C02EF2ED7206300EB2633 /* OnboardingViewController.swift in Sources */,

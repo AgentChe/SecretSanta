@@ -16,6 +16,8 @@ final class GlobalDefinitions {
     static let privacyPolicyUrl = URL(string: "https://apps-and-taps.com/policy")!
     static let contactUsUrl = URL(string: "https://apps-and-taps.com/#contact")!
     
+    static let appStoreUrl = URL(string: "https://apps-and-taps.com/#contact")!
+    
     enum Paygate {
         static let yearly = "iphone.santa.tracker.yearly"
         static let weekly = "iphone.santa.tracker.weekly"

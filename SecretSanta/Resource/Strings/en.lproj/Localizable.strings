@@ -87,3 +87,14 @@
 "Participient.Title.Edit" = "Edit participant";
 "Participient.Name" = "Name";
 "Participient.Email" = "Email";
+
+// MARK: Home
+"Home.Title" = "Secret\nSanta";
+"Home.StartSecretSanta" = "Start Secret Santa";
+"Home.Instruction.Title" = "How does it work?";
+"Home.Instruction.Step1" = "Step 1: Create event";
+"Home.Instruction.Step2" = "Step 2: Add all participants";
+"Home.Instruction.Step3" = "Step 3: Exclude pairs if needed";
+"Home.Instruction.Step4" = "Step 4: Participants receive emails";
+"Home.Instruction.Step5" = "Step 5: Exchange gifts!";
+"Home.Share" = "Share";
