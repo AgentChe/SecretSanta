@@ -13,6 +13,7 @@
 		DE05676B2EE312E100A93A0D /* HomeInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05676A2EE312E100A93A0D /* HomeInstructionView.swift */; };
 		DE05676D2EE316E800A93A0D /* HomeShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05676C2EE316E800A93A0D /* HomeShareButton.swift */; };
 		DE0567702EE31A7F00A93A0D /* HomeInstructionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05676F2EE31A7F00A93A0D /* HomeInstructionItemView.swift */; };
+		DE0567762EE472D000A93A0D /* MainCreateSecretSantaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567752EE472D000A93A0D /* MainCreateSecretSantaButton.swift */; };
 		DE3C01E52ED703A200EB2633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3C01D92ED703A200EB2633 /* Assets.xcassets */; };
 		DE3C01E72ED703A200EB2633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3C01DC2ED703A200EB2633 /* LaunchScreen.storyboard */; };
 		DE3C02682ED7053C00EB2633 /* Paygate.storekit in Resources */ = {isa = PBXBuildFile; fileRef = DE3C02292ED7053C00EB2633 /* Paygate.storekit */; };
@@ -136,6 +137,7 @@
 		DE05676A2EE312E100A93A0D /* HomeInstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInstructionView.swift; sourceTree = "<group>"; };
 		DE05676C2EE316E800A93A0D /* HomeShareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeShareButton.swift; sourceTree = "<group>"; };
 		DE05676F2EE31A7F00A93A0D /* HomeInstructionItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInstructionItemView.swift; sourceTree = "<group>"; };
+		DE0567752EE472D000A93A0D /* MainCreateSecretSantaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCreateSecretSantaButton.swift; sourceTree = "<group>"; };
 		DE3C01C02ED7039D00EB2633 /* SecretSanta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSanta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3C01D92ED703A200EB2633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE3C01DA2ED703A200EB2633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -309,6 +311,14 @@
 				DE05676F2EE31A7F00A93A0D /* HomeInstructionItemView.swift */,
 			);
 			path = Instruction;
+			sourceTree = "<group>";
+		};
+		DE0567742EE472CB00A93A0D /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				DE0567752EE472D000A93A0D /* MainCreateSecretSantaButton.swift */,
+			);
+			path = Atoms;
 			sourceTree = "<group>";
 		};
 		DE3C01B72ED7039D00EB2633 = {
@@ -721,6 +731,7 @@
 		DE3C032D2EDB2F5900EB2633 /* Tab */ = {
 			isa = PBXGroup;
 			children = (
+				DE0567742EE472CB00A93A0D /* Atoms */,
 				DE3C032E2EDB2F5F00EB2633 /* MainTabItemButton.swift */,
 				DE3C03302EDB2F6700EB2633 /* MainTabView.swift */,
 			);
@@ -1028,6 +1039,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0567762EE472D000A93A0D /* MainCreateSecretSantaButton.swift in Sources */,
 				DE3F30C62EDCB66C00453818 /* CSSParticipientsTableDummyCell.swift in Sources */,
 				DE3C026B2ED7053C00EB2633 /* PaygateEnableTrialButton.swift in Sources */,
 				DE3C03182EDB18B900EB2633 /* SecretSantasTableView.swift in Sources */,

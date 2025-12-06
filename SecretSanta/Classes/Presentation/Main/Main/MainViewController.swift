@@ -79,8 +79,29 @@ final class MainViewController: UIViewController {
                     .rx.tap.map { MainTabView.DrawsItem.settings }
                     .asSignal(onErrorSignalWith: .never())
             ])
+            .startWith(.home)
             .emit(to: Binder(mainView.tabView) { base, item in
                 base.update(selectedItem: item)
+            })
+            .disposed(by: disposeBag)
+        
+        Signal
+            .merge([
+                mainView.tabView.homeButtom
+                    .rx.tap.map { MainTabView.Style.colored }
+                    .asSignal(onErrorSignalWith: .never()),
+                
+                mainView.tabView.secretSantasButton
+                    .rx.tap.map { MainTabView.Style.normal }
+                    .asSignal(onErrorSignalWith: .never()),
+                
+                mainView.tabView.settingsButton
+                    .rx.tap.map { MainTabView.Style.normal }
+                    .asSignal(onErrorSignalWith: .never())
+            ])
+            .startWith(.colored)
+            .emit(to: Binder(mainView.tabView) { base, style in
+                base.update(style: style)
             })
             .disposed(by: disposeBag)
         

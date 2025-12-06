@@ -12,6 +12,10 @@ final class MainTabView: UIView {
         case home, secretSantas, settings
     }
     
+    enum Style {
+        case colored, normal
+    }
+    
     lazy var homeButtom = makeItemButton(item: .home)
     lazy var secretSantasButton = makeItemButton(item: .secretSantas)
     lazy var createSecretSantaButton = makeCreateSecretSantaButton()
@@ -33,16 +37,37 @@ final class MainTabView: UIView {
 // MARK: Public
 extension MainTabView {
     func update(selectedItem: DrawsItem) {
-        homeButtom.marked = selectedItem == .home
-        secretSantasButton.marked = selectedItem == .secretSantas
-        settingsButton.marked = selectedItem == .settings
+        homeButtom.alpha = selectedItem == .home ? 1 : 0.3
+        secretSantasButton.alpha = selectedItem == .secretSantas ? 1 : 0.3
+        settingsButton.alpha = selectedItem == .settings ? 1 : 0.3
+    }
+    
+    func update(style: Style) {
+        let itemStyle: MainTabItemButton.Style = {
+            switch style {
+            case .colored:
+                return .white
+            case .normal:
+                return .colored
+            }
+        }()
+        [homeButtom, secretSantasButton, settingsButton, paygateButton].forEach { $0.update(style: itemStyle) }
+        
+        backgroundColor = {
+            switch style {
+            case .colored:
+                return UIColor(integralRed: 146, green: 29, blue: 21)
+            case .normal:
+                return UIColor(integralRed: 255, green: 240, blue: 237)
+            }
+        }()
     }
 }
 
 // MARK: Private
 private extension MainTabView {
     func initialize() {
-        backgroundColor = UIColor(integralRed: 146, green: 29, blue: 21)
+        paygateButton.alpha = 0.3
     }
 }
 
@@ -62,7 +87,7 @@ private extension MainTabView {
         ])
         
         NSLayoutConstraint.activate([
-            createSecretSantaButton.widthAnchor.constraint(equalToConstant: 70.scale),
+            createSecretSantaButton.widthAnchor.constraint(equalToConstant: 51.scale),
             createSecretSantaButton.heightAnchor.constraint(equalToConstant: 51.scale),
             createSecretSantaButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             createSecretSantaButton.topAnchor.constraint(equalTo: topAnchor, constant: 7.scale)
@@ -91,9 +116,8 @@ private extension MainTabView {
         return view
     }
     
-    func makeCreateSecretSantaButton() -> UIButton {
-        let view = UIButton()
-        view.backgroundColor = UIColor.blue.withAlphaComponent(0.7)
+    func makeCreateSecretSantaButton() -> MainCreateSecretSantaButton {
+        let view = MainCreateSecretSantaButton()
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

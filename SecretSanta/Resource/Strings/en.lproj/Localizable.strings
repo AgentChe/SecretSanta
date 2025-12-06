@@ -98,3 +98,9 @@
 "Home.Instruction.Step4" = "Step 4: Participants receive emails";
 "Home.Instruction.Step5" = "Step 5: Exchange gifts!";
 "Home.Share" = "Share";
+
+// MARK: Main
+"Main.Tab.Home" = "Home";
+"Main.Tab.SecretSantas" = "Secret Santas";
+"Main.Tab.Settings" = "Settings";
+"Main.Tab.Paygate" = "Premium";
