@@ -12,6 +12,7 @@ final class CSSExcludePairsViewModel {
     enum Action {
         case nextStep(String)
         case matchingError
+        case openPaygate
     }
     
     private lazy var secretSantaManager = SecretSantaManager()
@@ -46,6 +47,7 @@ extension CSSExcludePairsViewModel {
             ),
             pairsElements: pairsElements,
             action: makeAction(
+                didSelectParticipient: input.didSelectParticipient,
                 didTapContinue: input.didTapContinue,
                 didReceiveSecretSantaId: input.didReceiveSecretSantaId,
                 participients: participients,
@@ -94,7 +96,7 @@ private extension CSSExcludePairsViewModel {
         }
         
         let events = Signal.merge(
-            didSelectParticipient.map(Event.select),
+            didSelectParticipient.filter { _ in SessionManager().hasActiveSubscriptions() }.map(Event.select),
             didTapDeletePair.map(Event.delete)
         )
         
@@ -149,12 +151,18 @@ private extension CSSExcludePairsViewModel {
     }
     
     func makeAction(
+        didSelectParticipient: Signal<Participient>,
         didTapContinue: Signal<Void>,
         didReceiveSecretSantaId: Signal<String>,
         participients: Driver<[Participient]>,
         pairsElements: Driver<[ExcludePairsCollectionElement]>
     ) -> Driver<Action> {
-        didTapContinue
+        let openPaygate = didSelectParticipient
+            .filter { _ in !SessionManager().hasActiveSubscriptions() }
+            .map { _ in Action.openPaygate }
+            .asDriver(onErrorDriveWith: .never())
+        
+        let nextStep = didTapContinue
             .withLatestFrom(didReceiveSecretSantaId)
             .asDriver(onErrorDriveWith: .never())
             .withLatestFrom(participients) { ($0, $1) }
@@ -182,5 +190,8 @@ private extension CSSExcludePairsViewModel {
                     .map { _ in Action.nextStep(secretSantaId) }
                     .asDriver(onErrorJustReturn: Action.matchingError)
             }
+        
+        return Driver
+            .merge(openPaygate, nextStep)
     }
 }

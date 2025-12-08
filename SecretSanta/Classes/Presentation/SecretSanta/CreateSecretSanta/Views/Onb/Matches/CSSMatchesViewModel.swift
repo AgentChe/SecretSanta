@@ -36,7 +36,7 @@ extension CSSMatchesViewModel {
 
 // MARK: Private
 private extension CSSMatchesViewModel {
-    // TODO: запрос на сервер для рассылки писем на почту
+    // TODO: запрос на сервер для рассылки писем на почту, если есть подписка
     func makeAction(didReceiveSecretSantaId: Signal<String>) -> Driver<Action> {
         didReceiveSecretSantaId
             .asObservable()

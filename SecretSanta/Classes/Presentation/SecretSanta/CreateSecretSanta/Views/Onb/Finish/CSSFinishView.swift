@@ -148,8 +148,10 @@ private extension CSSFinishView {
             .lineHeight(20.scale)
             .textAlignment(.center)
         
+        let titleKey = SessionManager().hasActiveSubscriptions() ? "CSSFinish.SubTitle.AS.True" : "CSSFinish.SubTitle.AS.False"
+        
         let view = UILabel()
-        view.attributedText = "CSSFinish.SubTitle".localized.attributed(with: attrs)
+        view.attributedText = titleKey.localized.attributed(with: attrs)
         view.numberOfLines = 4
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)

@@ -95,6 +95,9 @@ private extension CSSExcludePairsView {
             alert.addAction(okAction)
             
             vc?.present(alert, animated: true)
+        case .openPaygate:
+            let vc = PaygateViewController.make()
+            self.vc?.present(vc, animated: true)
         }
     }
 }

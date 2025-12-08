@@ -79,7 +79,8 @@
 "CSSMatches.Title" = "Creating pairs";
 "CSSMatches.SubTitle" = "Santa’s magic shuffles the group and gives everyone a mystery match";
 "CSSFinish.Title" = "Your Secret Santa is all set!";
-"CSSFinish.SubTitle" = "Emails are on the way to all participants. If someone can’t find theirs, remind them to check spam";
+"CSSFinish.SubTitle.AS.True" = "Emails are on the way to all participants. If someone can’t find theirs, remind them to check spam";
+"CSSFinish.SubTitle.AS.False" = "Upgrade to Premium and we’ll send emails to everyone. If someone can’t find theirs, tell them to check spam";
 "CSSFinish.RevealNow" = "Reveal now";
 
 // MARK: Participient
