@@ -7,6 +7,7 @@
 
 import UIKit
 
+// TODO: отслежить isActiveSubscription
 final class MainTabView: UIView {
     enum DrawsItem {
         case home, secretSantas, settings

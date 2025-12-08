@@ -104,3 +104,12 @@
 "Main.Tab.SecretSantas" = "Secret Santas";
 "Main.Tab.Settings" = "Settings";
 "Main.Tab.Paygate" = "Premium";
+
+// MARK: Settings
+"Settings.Title" = "Secret Santa";
+"Settings.Paygate.Title" = "Get full access";
+"Settings.Paygate.SubTitle" = "and create unlimited events";
+"Settings.Paygate.Action" = "Try for free";
+"Settings.ContactUs" = "Contact us";
+"Settings.TermsOfUse" = "Terms of use";
+"Settings.PrivacyPolicy" = "Privacy Policy";

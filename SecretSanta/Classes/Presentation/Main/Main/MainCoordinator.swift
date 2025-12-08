@@ -14,7 +14,7 @@ final class MainViewCoordinator {
     
     lazy var homeVC = HomeViewController.make()
     lazy var secretSantasVC = SecretSantasViewController.make()
-    lazy var settingsVC = UIViewController()
+    lazy var settingsVC = SettingsViewController.make()
     
     private weak var parentVC: UIViewController?
     private weak var container: UIView?
