@@ -57,7 +57,7 @@ final class MainViewController: UIViewController {
                     .asSignal(onErrorSignalWith: .never()),
                 
                 mainView.tabView.paygateButton
-                    .rx.tap.map { MainViewCoordinator.Route.paygate }
+                    .rx.tap.map { SessionManager().hasActiveSubscriptions() ? MainViewCoordinator.Route.home : MainViewCoordinator.Route.paygate }
                     .asSignal(onErrorSignalWith: .never()),
             ])
             .emit(to: Binder(coordinator) { base, route in
@@ -77,6 +77,10 @@ final class MainViewController: UIViewController {
                 
                 mainView.tabView.settingsButton
                     .rx.tap.map { MainTabView.DrawsItem.settings }
+                    .asSignal(onErrorSignalWith: .never()),
+                
+                mainView.tabView.paygateButton
+                    .rx.tap.compactMap { SessionManager().hasActiveSubscriptions() ? MainTabView.DrawsItem.home : nil }
                     .asSignal(onErrorSignalWith: .never())
             ])
             .startWith(.home)
