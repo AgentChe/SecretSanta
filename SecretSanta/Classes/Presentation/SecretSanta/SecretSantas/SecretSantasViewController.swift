@@ -84,7 +84,8 @@ private extension SecretSantasViewController {
             let vc = CreateSecretSantaViewController.make(secretSantaId: id)
             present(vc, animated: true)
         case .openSecretSanta(let id):
-            break // TODO: open screen
+            let vc = SecretSantaViewController.make(secretSantaId: id, cardsInitialState: .open)
+            present(vc, animated: true)
         }
     }
 }

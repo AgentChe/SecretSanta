@@ -28,7 +28,7 @@ extension SessionManager: SessionManagerProtocol {
     
     // TODO
     func hasActiveSubscriptions() -> Bool {
-        false
+        true
 //        guard let paymentData = OtterScale.shared.getPaymentData() else {
 //            return false
 //        }

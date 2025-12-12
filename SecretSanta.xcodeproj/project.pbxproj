@@ -21,6 +21,15 @@
 		DE0567832EE47A7D00A93A0D /* SettingsTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567822EE47A7D00A93A0D /* SettingsTableElement.swift */; };
 		DE0567862EE47A8D00A93A0D /* SettingsPaygateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567852EE47A8D00A93A0D /* SettingsPaygateCell.swift */; };
 		DE0567882EE47A9700A93A0D /* SettingsRouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567872EE47A9700A93A0D /* SettingsRouteCell.swift */; };
+		DE05678B2EE71CFF00A93A0D /* SecretSantaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05678A2EE71CFF00A93A0D /* SecretSantaViewController.swift */; };
+		DE05678D2EE71D0500A93A0D /* SecretSantaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05678C2EE71D0500A93A0D /* SecretSantaViewModel.swift */; };
+		DE05678F2EE71D0A00A93A0D /* SecretSantaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05678E2EE71D0A00A93A0D /* SecretSantaView.swift */; };
+		DE0567932EE730A800A93A0D /* MatchesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567922EE730A800A93A0D /* MatchesTableView.swift */; };
+		DE0567952EE730B800A93A0D /* MatchesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567942EE730B800A93A0D /* MatchesTableCell.swift */; };
+		DE05679A2EE988E000A93A0D /* MatchesCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567992EE988E000A93A0D /* MatchesCardsView.swift */; };
+		DE05679C2EE988E900A93A0D /* MatchCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05679B2EE988E900A93A0D /* MatchCardView.swift */; };
+		DE05679F2EE98A5700A93A0D /* MatchElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05679E2EE98A5700A93A0D /* MatchElement.swift */; };
+		DE0567A12EEAF6D700A93A0D /* MatchesFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567A02EEAF6D700A93A0D /* MatchesFormView.swift */; };
 		DE3C01E52ED703A200EB2633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3C01D92ED703A200EB2633 /* Assets.xcassets */; };
 		DE3C01E72ED703A200EB2633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3C01DC2ED703A200EB2633 /* LaunchScreen.storyboard */; };
 		DE3C02682ED7053C00EB2633 /* Paygate.storekit in Resources */ = {isa = PBXBuildFile; fileRef = DE3C02292ED7053C00EB2633 /* Paygate.storekit */; };
@@ -152,6 +161,15 @@
 		DE0567822EE47A7D00A93A0D /* SettingsTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableElement.swift; sourceTree = "<group>"; };
 		DE0567852EE47A8D00A93A0D /* SettingsPaygateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPaygateCell.swift; sourceTree = "<group>"; };
 		DE0567872EE47A9700A93A0D /* SettingsRouteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouteCell.swift; sourceTree = "<group>"; };
+		DE05678A2EE71CFF00A93A0D /* SecretSantaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaViewController.swift; sourceTree = "<group>"; };
+		DE05678C2EE71D0500A93A0D /* SecretSantaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaViewModel.swift; sourceTree = "<group>"; };
+		DE05678E2EE71D0A00A93A0D /* SecretSantaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSantaView.swift; sourceTree = "<group>"; };
+		DE0567922EE730A800A93A0D /* MatchesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableView.swift; sourceTree = "<group>"; };
+		DE0567942EE730B800A93A0D /* MatchesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableCell.swift; sourceTree = "<group>"; };
+		DE0567992EE988E000A93A0D /* MatchesCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesCardsView.swift; sourceTree = "<group>"; };
+		DE05679B2EE988E900A93A0D /* MatchCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCardView.swift; sourceTree = "<group>"; };
+		DE05679E2EE98A5700A93A0D /* MatchElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchElement.swift; sourceTree = "<group>"; };
+		DE0567A02EEAF6D700A93A0D /* MatchesFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesFormView.swift; sourceTree = "<group>"; };
 		DE3C01C02ED7039D00EB2633 /* SecretSanta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSanta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3C01D92ED703A200EB2633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE3C01DA2ED703A200EB2633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -371,6 +389,54 @@
 				DE0567872EE47A9700A93A0D /* SettingsRouteCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		DE0567892EE71CF700A93A0D /* SecretSanta */ = {
+			isa = PBXGroup;
+			children = (
+				DE0567902EE72E5A00A93A0D /* Views */,
+				DE05678A2EE71CFF00A93A0D /* SecretSantaViewController.swift */,
+				DE05678C2EE71D0500A93A0D /* SecretSantaViewModel.swift */,
+				DE05678E2EE71D0A00A93A0D /* SecretSantaView.swift */,
+			);
+			path = SecretSanta;
+			sourceTree = "<group>";
+		};
+		DE0567902EE72E5A00A93A0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE05679D2EE98A5100A93A0D /* Model */,
+				DE0567982EE988D200A93A0D /* MatchesCards */,
+				DE0567912EE7309500A93A0D /* MatchesTable */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE0567912EE7309500A93A0D /* MatchesTable */ = {
+			isa = PBXGroup;
+			children = (
+				DE0567922EE730A800A93A0D /* MatchesTableView.swift */,
+				DE0567942EE730B800A93A0D /* MatchesTableCell.swift */,
+			);
+			path = MatchesTable;
+			sourceTree = "<group>";
+		};
+		DE0567982EE988D200A93A0D /* MatchesCards */ = {
+			isa = PBXGroup;
+			children = (
+				DE0567992EE988E000A93A0D /* MatchesCardsView.swift */,
+				DE05679B2EE988E900A93A0D /* MatchCardView.swift */,
+				DE0567A02EEAF6D700A93A0D /* MatchesFormView.swift */,
+			);
+			path = MatchesCards;
+			sourceTree = "<group>";
+		};
+		DE05679D2EE98A5100A93A0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE05679E2EE98A5700A93A0D /* MatchElement.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DE3C01B72ED7039D00EB2633 = {
@@ -716,6 +782,7 @@
 		DE3C030B2EDB101200EB2633 /* SecretSanta */ = {
 			isa = PBXGroup;
 			children = (
+				DE0567892EE71CF700A93A0D /* SecretSanta */,
 				DE3C03322EDB3C5600EB2633 /* CreateSecretSanta */,
 				DE3C030C2EDB105B00EB2633 /* SecretSantas */,
 			);
@@ -1098,15 +1165,18 @@
 				DE3C03182EDB18B900EB2633 /* SecretSantasTableView.swift in Sources */,
 				DE0567812EE47A7500A93A0D /* SettingsTableView.swift in Sources */,
 				DE3C026C2ED7053C00EB2633 /* ProductPrice.swift in Sources */,
+				DE05679C2EE988E900A93A0D /* MatchCardView.swift in Sources */,
 				DE3F30DC2EDF023500453818 /* CSSExcludePairsTableElement.swift in Sources */,
 				DE3C02DE2ED70A8700EB2633 /* Appearance.swift in Sources */,
 				DE3C032F2EDB2F5F00EB2633 /* MainTabItemButton.swift in Sources */,
+				DE05679F2EE98A5700A93A0D /* MatchElement.swift in Sources */,
 				DE3C033D2EDB410100EB2633 /* CSSProgressView.swift in Sources */,
 				DE3F30B32EDCA04100453818 /* CSSCreateView.swift in Sources */,
 				DE3C026E2ED7053C00EB2633 /* PaddingLabel.swift in Sources */,
 				DE3F30B92EDCAEEE00453818 /* CSSParticipientsView.swift in Sources */,
 				DE3C02712ED7053C00EB2633 /* UIView+RxExtension.swift in Sources */,
 				DE3C02732ED7053C00EB2633 /* NumberLaunches.swift in Sources */,
+				DE05678B2EE71CFF00A93A0D /* SecretSantaViewController.swift in Sources */,
 				DE3C03272EDB2F3200EB2633 /* MainViewController.swift in Sources */,
 				DE3C03232EDB27AB00EB2633 /* SecretSantaParticipientsCount.swift in Sources */,
 				DE3C02762ED7053C00EB2633 /* NavigationController.swift in Sources */,
@@ -1130,6 +1200,7 @@
 				DE3C03102EDB107200EB2633 /* SecretSantasViewModel.swift in Sources */,
 				DE3C03292EDB2F3800EB2633 /* MainView.swift in Sources */,
 				DE3C02822ED7053C00EB2633 /* TapAreaButton.swift in Sources */,
+				DE0567A12EEAF6D700A93A0D /* MatchesFormView.swift in Sources */,
 				DE0567882EE47A9700A93A0D /* SettingsRouteCell.swift in Sources */,
 				DE3F30CD2EDDC13200453818 /* ParticipientViewModel.swift in Sources */,
 				DE3F30B12EDCA03D00453818 /* CSSCreateViewModel.swift in Sources */,
@@ -1142,6 +1213,7 @@
 				DE3C028E2ED7053C00EB2633 /* ObservableRetrySingle.swift in Sources */,
 				DE3C028F2ED7053C00EB2633 /* IAPActionResult.swift in Sources */,
 				DE3C02902ED7053C00EB2633 /* PaygateViewController.swift in Sources */,
+				DE05679A2EE988E000A93A0D /* MatchesCardsView.swift in Sources */,
 				DE3C02912ED7053C00EB2633 /* TextAttributes.swift in Sources */,
 				DE05677B2EE4791A00A93A0D /* SettingsViewModel.swift in Sources */,
 				DE3C02962ED7053C00EB2633 /* Fonts.swift in Sources */,
@@ -1152,6 +1224,7 @@
 				DE3C02982ED7053C00EB2633 /* UIApplication+Extension.swift in Sources */,
 				DE3C02992ED7053C00EB2633 /* PaygateBestOfferView.swift in Sources */,
 				DE3F30D82EDF022700453818 /* CSSExcludePairsTableView.swift in Sources */,
+				DE0567952EE730B800A93A0D /* MatchesTableCell.swift in Sources */,
 				DE3C029A2ED7053C00EB2633 /* PaygateViewModel.swift in Sources */,
 				DE3C029B2ED7053C00EB2633 /* UIEdgeInsets+Extension.swift in Sources */,
 				DE3C029D2ED7053C00EB2633 /* ContentError.swift in Sources */,
@@ -1176,11 +1249,14 @@
 				DE3C02A82ED7053C00EB2633 /* SplashReceiptValidationObserver.swift in Sources */,
 				DE3C02A92ED7053C00EB2633 /* ScreenSize.swift in Sources */,
 				DE3F30DF2EE1DA8F00453818 /* ExcludePairsView.swift in Sources */,
+				DE0567932EE730A800A93A0D /* MatchesTableView.swift in Sources */,
 				DE3C03122EDB107600EB2633 /* SecretSantasView.swift in Sources */,
 				DE3C031A2EDB18C300EB2633 /* SecretSantasTableCell.swift in Sources */,
 				DE3C02AA2ED7053C00EB2633 /* Collection+Extension.swift in Sources */,
 				DE3C02AC2ED7053C00EB2633 /* IAPManager.swift in Sources */,
 				DE3F30EC2EE1FD5900453818 /* CSSMatchesView.swift in Sources */,
+				DE05678F2EE71D0A00A93A0D /* SecretSantaView.swift in Sources */,
+				DE05678D2EE71D0500A93A0D /* SecretSantaViewModel.swift in Sources */,
 				DE3C02AF2ED7053C00EB2633 /* Currency.swift in Sources */,
 				DE3C02B12ED7053C00EB2633 /* IAPProduct.swift in Sources */,
 				DE3C02B22ED7053C00EB2633 /* PurchaseValidationObserver.swift in Sources */,

@@ -53,7 +53,8 @@ private extension CSSFinishView {
     func revealNowTapped() {
         guard let vc, let secretSantaId else { return }
         
-        // TODO: open
+        let ssVC = SecretSantaViewController.make(secretSantaId: secretSantaId, cardsInitialState: .hidden)
+        vc.present(ssVC, animated: true)
     }
     
     @objc

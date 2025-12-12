@@ -10,6 +10,7 @@ import GRDB
 
 protocol SecretSantaProtocol {
     func createSecretSanta(name: String) -> Single<SecretSanta>
+    func fetchSecretSanta(id: String) -> Single<SecretSanta?>
     func fetchSecretSantas() -> Single<[SecretSanta]>
     func createParticipient(secretSantaId: String, name: String, email: String) -> Single<Participient>
     func editParticipient(id: String, secretSantaId: String, name: String, email: String) -> Single<Participient>
@@ -70,6 +71,26 @@ extension SecretSantaManager: SecretSantaProtocol {
                 single(.success(secretSanta))
                 
                 SecretSantaMediator.shared.createdSecretSanta(secretSanta)
+            } catch {
+                single(.failure(error))
+            }
+
+            return Disposables.create()
+        }
+    }
+    
+    func fetchSecretSanta(id: String) -> Single<SecretSanta?> {
+        Single.create { [weak self] single in
+            guard let dbQueue = self?.dbQueue else {
+                single(.failure(SecretSantaError.dbNotInitialized))
+                return Disposables.create()
+            }
+
+            do {
+                let result = try dbQueue.read { db in
+                    try SecretSanta.fetchOne(db, id: id)
+                }
+                single(.success(result))
             } catch {
                 single(.failure(error))
             }

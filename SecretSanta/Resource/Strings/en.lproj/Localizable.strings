@@ -114,3 +114,7 @@
 "Settings.ContactUs" = "Contact us";
 "Settings.TermsOfUse" = "Terms of use";
 "Settings.PrivacyPolicy" = "Privacy Policy";
+
+// MARK: SecretSanta
+"SecretSanta.OffersGiftTo" = "offers gift to";
+"SecretSanta.Share" = "Share";
