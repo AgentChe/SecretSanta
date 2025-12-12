@@ -101,6 +101,10 @@ final class MainViewController: UIViewController {
                 
                 mainView.tabView.settingsButton
                     .rx.tap.map { MainTabView.Style.normal }
+                    .asSignal(onErrorSignalWith: .never()),
+                
+                mainView.tabView.paygateButton
+                    .rx.tap.compactMap { SessionManager().hasActiveSubscriptions() ? MainTabView.Style.colored : nil }
                     .asSignal(onErrorSignalWith: .never())
             ])
             .startWith(.colored)
