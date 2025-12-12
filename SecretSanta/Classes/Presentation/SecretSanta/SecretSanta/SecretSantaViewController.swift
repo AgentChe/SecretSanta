@@ -38,7 +38,8 @@ final class SecretSantaViewController: UIViewController {
         let output = viewModel.configure(input: SecretSantaViewModel.Input(
             didTapClose: mainView.closeButton.rx.tap.asSignal(),
             didTapListForm: mainView.listFormButton.rx.tap.asSignal(),
-            didSelectElementInList: mainView.tableView.didSelect
+            didSelectElementInList: mainView.tableView.didSelect,
+            didTapShare: mainView.cardsView.didTapShare
         ))
         
         output.name
@@ -85,6 +86,20 @@ private extension SecretSantaViewController {
             dismiss(animated: true)
         case .targetCard(let id):
             mainView.cardsView.cardsView.select(elementId: id)
+        case .openPaygate:
+            let vc = PaygateViewController.make()
+            present(vc, animated: true)
+        case .share(let element):
+            guard let pdfUrl = MailGenerate.pdfURL(participient: element.participientTwo) else { return }
+
+            let vc = UIActivityViewController(activityItems: [pdfUrl], applicationActivities: nil)
+            
+            if let pop = vc.popoverPresentationController {
+                pop.sourceView = mainView
+                pop.sourceRect = mainView.bounds
+            }
+
+            present(vc, animated: true)
         }
     }
 }

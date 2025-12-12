@@ -30,6 +30,7 @@
 		DE05679C2EE988E900A93A0D /* MatchCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05679B2EE988E900A93A0D /* MatchCardView.swift */; };
 		DE05679F2EE98A5700A93A0D /* MatchElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05679E2EE98A5700A93A0D /* MatchElement.swift */; };
 		DE0567A12EEAF6D700A93A0D /* MatchesFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567A02EEAF6D700A93A0D /* MatchesFormView.swift */; };
+		DE0567A42EEC516700A93A0D /* MailGenerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567A32EEC516700A93A0D /* MailGenerate.swift */; };
 		DE3C01E52ED703A200EB2633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3C01D92ED703A200EB2633 /* Assets.xcassets */; };
 		DE3C01E72ED703A200EB2633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3C01DC2ED703A200EB2633 /* LaunchScreen.storyboard */; };
 		DE3C02682ED7053C00EB2633 /* Paygate.storekit in Resources */ = {isa = PBXBuildFile; fileRef = DE3C02292ED7053C00EB2633 /* Paygate.storekit */; };
@@ -170,6 +171,7 @@
 		DE05679B2EE988E900A93A0D /* MatchCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCardView.swift; sourceTree = "<group>"; };
 		DE05679E2EE98A5700A93A0D /* MatchElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchElement.swift; sourceTree = "<group>"; };
 		DE0567A02EEAF6D700A93A0D /* MatchesFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesFormView.swift; sourceTree = "<group>"; };
+		DE0567A32EEC516700A93A0D /* MailGenerate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailGenerate.swift; sourceTree = "<group>"; };
 		DE3C01C02ED7039D00EB2633 /* SecretSanta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSanta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3C01D92ED703A200EB2633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE3C01DA2ED703A200EB2633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -437,6 +439,14 @@
 				DE05679E2EE98A5700A93A0D /* MatchElement.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DE0567A22EEC515500A93A0D /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				DE0567A32EEC516700A93A0D /* MailGenerate.swift */,
+			);
+			path = Share;
 			sourceTree = "<group>";
 		};
 		DE3C01B72ED7039D00EB2633 = {
@@ -782,6 +792,7 @@
 		DE3C030B2EDB101200EB2633 /* SecretSanta */ = {
 			isa = PBXGroup;
 			children = (
+				DE0567A22EEC515500A93A0D /* Share */,
 				DE0567892EE71CF700A93A0D /* SecretSanta */,
 				DE3C03322EDB3C5600EB2633 /* CreateSecretSanta */,
 				DE3C030C2EDB105B00EB2633 /* SecretSantas */,
@@ -1246,6 +1257,7 @@
 				DE3C02A72ED7053C00EB2633 /* IAPError.swift in Sources */,
 				DE0567642EE30ED000A93A0D /* HomeViewController.swift in Sources */,
 				DE3F30DA2EDF022E00453818 /* CSSExcludePairsTableCell.swift in Sources */,
+				DE0567A42EEC516700A93A0D /* MailGenerate.swift in Sources */,
 				DE3C02A82ED7053C00EB2633 /* SplashReceiptValidationObserver.swift in Sources */,
 				DE3C02A92ED7053C00EB2633 /* ScreenSize.swift in Sources */,
 				DE3F30DF2EE1DA8F00453818 /* ExcludePairsView.swift in Sources */,
@@ -1313,8 +1325,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7FN7933CDF;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SecretSanta/Info.plist;
@@ -1329,8 +1344,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = akosnt17.aienglish2.dev.SecretSanta;
+				PRODUCT_BUNDLE_IDENTIFIER = navisapps.autocheck.ru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Autocheck Development Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1347,8 +1364,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 7FN7933CDF;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SecretSanta/Info.plist;
@@ -1363,8 +1383,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = akosnt17.aienglish2.dev.SecretSanta;
+				PRODUCT_BUNDLE_IDENTIFIER = navisapps.autocheck.ru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Autocheck Development Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

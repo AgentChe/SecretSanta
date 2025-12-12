@@ -16,6 +16,8 @@ final class SecretSantaViewModel {
     enum Action {
         case close
         case targetCard(String)
+        case openPaygate
+        case share(MatchesElement)
     }
     
     private lazy var secretSantaManager = SecretSantaManager()
@@ -35,6 +37,7 @@ extension SecretSantaViewModel {
         let didTapClose: Signal<Void>
         let didTapListForm: Signal<Void>
         let didSelectElementInList: Signal<MatchesElement>
+        let didTapShare: Signal<MatchesElement>
     }
     
     struct Output {
@@ -49,7 +52,8 @@ extension SecretSantaViewModel {
             name: makeName(secretSantaId: secretSantaId),
             action: makeAction(
                 didTapClose: input.didTapClose,
-                didSelectElementInList: input.didSelectElementInList
+                didSelectElementInList: input.didSelectElementInList,
+                didTapShare: input.didTapShare
             ),
             listForm: makeListForm(
                 didTapListForm: input.didTapListForm,
@@ -67,7 +71,8 @@ extension SecretSantaViewModel {
 private extension SecretSantaViewModel {
     func makeAction(
         didTapClose: Signal<Void>,
-        didSelectElementInList: Signal<MatchesElement>
+        didSelectElementInList: Signal<MatchesElement>,
+        didTapShare: Signal<MatchesElement>
     ) -> Driver<Action> {
         let close = didTapClose
             .map { Action.close }
@@ -77,8 +82,14 @@ private extension SecretSantaViewModel {
             .map { Action.targetCard($0.id) }
             .asDriver(onErrorDriveWith: .never())
         
+        let share = didTapShare
+            .map { element -> Action in
+                SessionManager().hasActiveSubscriptions() ? .share(element) : .openPaygate
+            }
+            .asDriver(onErrorDriveWith: .never())
+        
         return Driver
-            .merge(close, targetCard)
+            .merge(close, targetCard, share)
     }
     
     func makeName(secretSantaId: Driver<String>) -> Driver<String> {

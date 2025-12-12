@@ -22,6 +22,10 @@ final class MatchesCardsView: UIView {
 
 // MARK: Public
 extension MatchesCardsView {
+    var currentElement: MatchesElement? {
+        currentCardView?.element
+    }
+    
     func select(elementId: String) {
         clear()
         

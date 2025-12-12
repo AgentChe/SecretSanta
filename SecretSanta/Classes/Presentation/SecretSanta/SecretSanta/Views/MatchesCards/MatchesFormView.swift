@@ -28,6 +28,15 @@ final class MatchesFormView: UIView {
     }
 }
 
+// MARK: Public
+extension MatchesFormView {
+    var didTapShare: Signal<MatchesElement> {
+        shareButton.rx.tap
+            .compactMap { [weak self] in self?.cardsView.currentElement }
+            .asSignal(onErrorSignalWith: .never())
+    }
+}
+
 // MARK: Private
 private extension MatchesFormView {
     func initialize() {

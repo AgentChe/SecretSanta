@@ -118,3 +118,8 @@
 // MARK: SecretSanta
 "SecretSanta.OffersGiftTo" = "offers gift to";
 "SecretSanta.Share" = "Share";
+
+// MARK: Share
+"Share.AppName" = "Secret Santa App";
+"Share.Assigned" = "You’ve been assigned a Secret Santa for:";
+"Share.Info" = "Get ready to spread some holiday magic! Think of something small, thoughtful, or funny — it’s all about the spirit.\nHave fun, Secret Santa! 🎁";

@@ -18,6 +18,8 @@ final class GlobalDefinitions {
     
     static let appStoreUrl = URL(string: "https://apps-and-taps.com/#contact")!
     
+    static let developerEmail = "help@apps-and-taps.com"
+    
     enum Paygate {
         static let yearly = "iphone.santa.tracker.yearly"
         static let weekly = "iphone.santa.tracker.weekly"
