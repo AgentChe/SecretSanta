@@ -18,12 +18,46 @@ final class MatchesCardsView: UIView {
     private var previousCardView: MatchCardView?
     private var currentCardView: MatchCardView?
     private var nextCardView: MatchCardView?
+    
+    private var placeholderView: UIImageView?
+    
+    private var hideWithPlaceholder: Bool
+    
+    init(hideWithPlaceholder: Bool) {
+        self.hideWithPlaceholder = hideWithPlaceholder
+        
+        super.init(frame: .zero)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
 // MARK: Public
 extension MatchesCardsView {
     var currentElement: MatchesElement? {
         currentCardView?.element
+    }
+    
+    func reveal(animated: Bool, completion: @escaping () -> Void) {
+        hideWithPlaceholder = false
+        
+        if animated {
+            UIView.animate(withDuration: 0.3, animations: { [weak self] in
+                self?.placeholderView?.alpha = 0
+            }, completion: { [weak self] _ in
+                self?.placeholderView?.removeFromSuperview()
+                self?.placeholderView = nil
+                
+                completion()
+            })
+        } else {
+            placeholderView?.removeFromSuperview()
+            placeholderView = nil
+            
+            completion()
+        }
     }
     
     func select(elementId: String) {
@@ -106,6 +140,22 @@ private extension MatchesCardsView {
             addSubview(cardView)
             
             self.currentCardView = cardView
+        }
+        
+        if hideWithPlaceholder {
+            let placeholderView = UIImageView()
+            placeholderView.contentMode = .scaleAspectFill
+            placeholderView.layer.cornerRadius = 40.scale
+            placeholderView.layer.masksToBounds = true
+            placeholderView.image = UIImage(named: "SecretSanta.Placeholder")
+            placeholderView.frame.size = CGSize(
+                width: Constants.cardWidth,
+                height: Constants.cardHeight
+            )
+            placeholderView.frame.origin = CGPoint(x: 32.scale, y: 0)
+            addSubview(placeholderView)
+            
+            self.placeholderView = placeholderView
         }
         
         if let currentCardIndex = elements.firstIndex(where: { $0.id == currentElementId }) {

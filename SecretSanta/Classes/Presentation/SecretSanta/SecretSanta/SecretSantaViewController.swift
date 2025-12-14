@@ -9,17 +9,19 @@ import UIKit
 import RxSwift
 
 final class SecretSantaViewController: UIViewController {
-    private lazy var mainView = SecretSantaView()
+    enum CardsInitialState {
+        case hidden, open
+    }
+    
+    private let mainView: SecretSantaView
     
     private let viewModel: SecretSantaViewModel
     
     private lazy var disposeBag = DisposeBag()
     
-    private init(secretSantaId: String, cardsInitialState: SecretSantaViewModel.CardsInitialState) {
-        viewModel = SecretSantaViewModel(
-            secretSantaId: secretSantaId,
-            cardsInitialState: cardsInitialState
-        )
+    private init(secretSantaId: String, cardsInitialState: CardsInitialState) {
+        mainView = SecretSantaView(cardsInitialState: cardsInitialState)
+        viewModel = SecretSantaViewModel(secretSantaId: secretSantaId)
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -71,7 +73,7 @@ final class SecretSantaViewController: UIViewController {
 
 // MARK: Public
 extension SecretSantaViewController {
-    static func make(secretSantaId: String, cardsInitialState: SecretSantaViewModel.CardsInitialState) -> SecretSantaViewController {
+    static func make(secretSantaId: String, cardsInitialState: CardsInitialState) -> SecretSantaViewController {
         let vc = SecretSantaViewController(secretSantaId: secretSantaId, cardsInitialState: cardsInitialState)
         vc.modalPresentationStyle = .fullScreen
         return vc
@@ -85,6 +87,7 @@ private extension SecretSantaViewController {
         case .close:
             dismiss(animated: true)
         case .targetCard(let id):
+            mainView.cardsView.removePlaceholderIfThereIsOne()
             mainView.cardsView.cardsView.select(elementId: id)
         case .openPaygate:
             let vc = PaygateViewController.make()

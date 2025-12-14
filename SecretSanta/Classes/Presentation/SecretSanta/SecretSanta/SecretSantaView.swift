@@ -25,8 +25,12 @@ final class SecretSantaView: UIView {
         .textAlignment(.center)
         .lineBreakMode(.byTruncatingTail)
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    private let cardsInitialState: SecretSantaViewController.CardsInitialState
+    
+    init(cardsInitialState: SecretSantaViewController.CardsInitialState) {
+        self.cardsInitialState = cardsInitialState
+        
+        super.init(frame: .zero)
         
         makeConstraints()
         initialize()
@@ -137,7 +141,7 @@ private extension SecretSantaView {
     }
     
     func makeCardsView() -> MatchesFormView {
-        let view = MatchesFormView()
+        let view = MatchesFormView(hideWithPlaceholder: cardsInitialState == .hidden)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

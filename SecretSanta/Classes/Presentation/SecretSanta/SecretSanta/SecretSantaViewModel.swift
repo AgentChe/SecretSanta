@@ -9,10 +9,6 @@ import RxSwift
 import RxCocoa
 
 final class SecretSantaViewModel {
-    enum CardsInitialState {
-        case hidden, open
-    }
-    
     enum Action {
         case close
         case targetCard(String)
@@ -23,11 +19,9 @@ final class SecretSantaViewModel {
     private lazy var secretSantaManager = SecretSantaManager()
     
     private let secretSantaId: Driver<String>
-    private let cardsInitialState: Driver<CardsInitialState>
     
-    init(secretSantaId: String, cardsInitialState: CardsInitialState) {
+    init(secretSantaId: String) {
         self.secretSantaId = BehaviorRelay(value: secretSantaId).asDriver()
-        self.cardsInitialState = BehaviorRelay(value: cardsInitialState).asDriver()
     }
 }
 

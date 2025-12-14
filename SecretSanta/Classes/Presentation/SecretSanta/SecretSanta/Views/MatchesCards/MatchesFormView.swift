@@ -13,14 +13,20 @@ final class MatchesFormView: UIView {
     lazy var cardsView = makeCardsView()
     lazy var nextButton = makeNextButton()
     lazy var shareButton = makeShareButton()
+    lazy var tapToRevealButton = makeTapToRevealButton()
     
     private lazy var disposeBag = DisposeBag()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    private var hideWithPlaceholder: Bool
+    
+    init(hideWithPlaceholder: Bool) {
+        self.hideWithPlaceholder = hideWithPlaceholder
+        
+        super.init(frame: .zero)
         
         makeConstraints()
         initialize()
+        updateUI()
     }
     
     required init?(coder: NSCoder) {
@@ -30,6 +36,10 @@ final class MatchesFormView: UIView {
 
 // MARK: Public
 extension MatchesFormView {
+    func removePlaceholderIfThereIsOne() {
+        removePlaceholder(animated: false)
+    }
+    
     var didTapShare: Signal<MatchesElement> {
         shareButton.rx.tap
             .compactMap { [weak self] in self?.cardsView.currentElement }
@@ -55,17 +65,38 @@ private extension MatchesFormView {
                 nextButton.rx.tap.asSignal(),
                 nextSwipe.rx.event.mapToVoid().asSignal(onErrorSignalWith: .never())
             )
+            .filter { [weak self] void in self?.hideWithPlaceholder == false }
             .emit(to: Binder(cardsView) { base, void in
                 base.switchToNext()
             })
             .disposed(by: disposeBag)
         
         previousSwipe.rx.event.mapToVoid()
+            .filter { [weak self] void in self?.hideWithPlaceholder == false }
             .asSignal(onErrorSignalWith: .never())
             .emit(to: Binder(cardsView) { base, void in
                 base.switchToPrevious()
             })
             .disposed(by: disposeBag)
+        
+        tapToRevealButton.rx.tap
+            .bind(to: Binder(self) { base, void in
+                base.removePlaceholder(animated: true)
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    func removePlaceholder(animated: Bool) {
+        cardsView.reveal(animated: animated) { [weak self] in
+            self?.hideWithPlaceholder = false
+            self?.updateUI()
+        }
+    }
+    
+    func updateUI() {
+        nextButton.isHidden = hideWithPlaceholder
+        shareButton.isHidden = hideWithPlaceholder
+        tapToRevealButton.isHidden = !hideWithPlaceholder
     }
 }
 
@@ -92,13 +123,18 @@ private extension MatchesFormView {
             shareButton.bottomAnchor.constraint(equalTo: bottomAnchor),
             shareButton.heightAnchor.constraint(equalToConstant: 58.scale)
         ])
+        
+        NSLayoutConstraint.activate([
+            tapToRevealButton.centerXAnchor.constraint(equalTo: centerXAnchor),
+            tapToRevealButton.topAnchor.constraint(equalTo: cardsView.bottomAnchor, constant: 53.scale)
+        ])
     }
 }
 
 // MARK: Lazy initialization
 private extension MatchesFormView {
     func makeCardsView() -> MatchesCardsView {
-        let view = MatchesCardsView()
+        let view = MatchesCardsView(hideWithPlaceholder: hideWithPlaceholder)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
@@ -132,6 +168,18 @@ private extension MatchesFormView {
         let view = UIButton()
         view.backgroundColor = UIColor.clear
         view.setAttributedTitle("SecretSanta.Share".localized.attributed(with: attrs), for: .normal)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
+        return view
+    }
+    
+    func makeTapToRevealButton() -> TapAreaButton {
+        let attrs = TextAttributes()
+            .textColor(Appearance.mono100)
+            .font(Fonts.SFPro.medium(size: 15.scale))
+        
+        let view = TapAreaButton()
+        view.setAttributedTitle("SecretSanta.TapToReveal".localized.attributed(with: attrs), for: .normal)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

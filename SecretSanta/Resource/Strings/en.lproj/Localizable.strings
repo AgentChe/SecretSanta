@@ -118,6 +118,7 @@
 // MARK: SecretSanta
 "SecretSanta.OffersGiftTo" = "offers gift to";
 "SecretSanta.Share" = "Share";
+"SecretSanta.TapToReveal" = "Tap to reveal";
 
 // MARK: Share
 "Share.AppName" = "Secret Santa App";
