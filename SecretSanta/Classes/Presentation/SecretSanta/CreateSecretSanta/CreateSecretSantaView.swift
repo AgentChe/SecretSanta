@@ -15,6 +15,7 @@ final class CreateSecretSantaView: UIView {
         didSet {
             participientsView.vc = vc
             excludePairsView.vc = vc
+            matchesView.vc = vc
             finishView.vc = vc
         }
     }

@@ -8,6 +8,24 @@
 import UIKit
 
 enum MailGenerate {
+    static func pdfDataByEmail(matchesElements: [MatchesElement], completion: @escaping ([String: URL]) -> Void) {
+        DispatchQueue.global(qos: .userInitiated).async {
+            var result = [String: URL]()
+            
+            for matchesElement in matchesElements {
+                autoreleasepool {
+                    if let pdfUrl = pdfURL(participient: matchesElement.participientTwo) {
+                        result[matchesElement.participientOne.email] = pdfUrl
+                    }
+                }
+            }
+            
+            DispatchQueue.main.async {
+                completion(result)
+            }
+        }
+    }
+    
     static func pdfURL(participient: Participient) -> URL? {
         let pageWidth: CGFloat = 390
         let paddingX: CGFloat = 16

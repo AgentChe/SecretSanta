@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.10.2)
   - GRDB.swift (6.24.1):
     - GRDB.swift/standard (= 6.24.1)
   - GRDB.swift/standard (6.24.1)
@@ -12,6 +13,7 @@ PODS:
   - SwiftyStoreKit (0.16.1)
 
 DEPENDENCIES:
+  - Alamofire
   - GRDB.swift
   - OtterScaleiOS (from `https://github.com/AgentChe/OtterScaleiOS.git`)
   - RxCocoa
@@ -20,6 +22,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Alamofire
     - GRDB.swift
     - RxCocoa
     - RxRelay
@@ -36,6 +39,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/AgentChe/OtterScaleiOS.git
 
 SPEC CHECKSUMS:
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
   GRDB.swift: 136dcb5d8dddca50aae3ba7d77475f79e7232cd8
   OtterScaleiOS: 7797bb943c69572cd25a6118939ddb7c4684f03c
   RxCocoa: ac16414696ae706516be3e1ab00fcce5bdc9be8a
@@ -43,6 +47,6 @@ SPEC CHECKSUMS:
   RxSwift: 31649ace6aceeb422e16ff71c60804f9c3281ed9
   SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
 
-PODFILE CHECKSUM: 58ceecc7e06789449dc3de511441400ffda839e2
+PODFILE CHECKSUM: ef8628371f8272dc1e5469337255d18d104767c9
 
 COCOAPODS: 1.16.2

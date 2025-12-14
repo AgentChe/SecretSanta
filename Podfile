@@ -11,6 +11,7 @@ target 'SecretSanta' do
   pod 'GRDB.swift'
   
   pod 'SwiftyStoreKit'
+  pod 'Alamofire'
 
   pod 'OtterScaleiOS', :git => "https://github.com/AgentChe/OtterScaleiOS.git"
 end

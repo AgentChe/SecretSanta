@@ -10,6 +10,8 @@ import RxSwift
 import RxCocoa
 
 final class CSSMatchesView: UIView {
+    weak var vc: UIViewController?
+    
     lazy var imageView = makeImageView()
     lazy var progressLabel = makeProgressLabel()
     lazy var titleLabel = makeTitleLabel()
@@ -57,6 +59,10 @@ private extension CSSMatchesView {
     }
     
     func configure() {
+        viewModel.tryAgain = { [weak self] error -> Observable<Void> in
+            self?.open(error: error) ?? .never()
+        }
+        
         let output = viewModel.configure(input: CSSMatchesViewModel.Input(
             didReceiveSecretSantaId: didReceiveSecretSantaIdTrigger.asSignal()
         ))
@@ -76,6 +82,20 @@ private extension CSSMatchesView {
             let text = String(format: "%i%%", progress)
             progressLabel.attributedText = text.attributed(with: progressAttrs)
         }
+    }
+    
+    func open(error: Error) -> Observable<Void> {
+        Observable<Void>
+            .create { [weak self] observe in
+                guard let self else { return Disposables.create() }
+                
+                let vc = TryAgainViewController.make(error: error) {
+                    observe.onNext(())
+                }
+                self.vc?.present(vc, animated: true)
+                
+                return Disposables.create()
+            }
     }
 }
 

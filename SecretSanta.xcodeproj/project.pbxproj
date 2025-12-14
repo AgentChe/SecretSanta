@@ -31,6 +31,10 @@
 		DE05679F2EE98A5700A93A0D /* MatchElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE05679E2EE98A5700A93A0D /* MatchElement.swift */; };
 		DE0567A12EEAF6D700A93A0D /* MatchesFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567A02EEAF6D700A93A0D /* MatchesFormView.swift */; };
 		DE0567A42EEC516700A93A0D /* MailGenerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567A32EEC516700A93A0D /* MailGenerate.swift */; };
+		DE0567A72EEC635000A93A0D /* RestAPITransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567A62EEC635000A93A0D /* RestAPITransport.swift */; };
+		DE0567A92EEC639D00A93A0D /* ShareDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567A82EEC639D00A93A0D /* ShareDataRequest.swift */; };
+		DE0567AC2EEC6E0B00A93A0D /* TryAgainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567AB2EEC6E0B00A93A0D /* TryAgainViewController.swift */; };
+		DE0567AE2EEC6E1300A93A0D /* TryAgainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0567AD2EEC6E1300A93A0D /* TryAgainView.swift */; };
 		DE3C01E52ED703A200EB2633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3C01D92ED703A200EB2633 /* Assets.xcassets */; };
 		DE3C01E72ED703A200EB2633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3C01DC2ED703A200EB2633 /* LaunchScreen.storyboard */; };
 		DE3C02682ED7053C00EB2633 /* Paygate.storekit in Resources */ = {isa = PBXBuildFile; fileRef = DE3C02292ED7053C00EB2633 /* Paygate.storekit */; };
@@ -172,6 +176,10 @@
 		DE05679E2EE98A5700A93A0D /* MatchElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchElement.swift; sourceTree = "<group>"; };
 		DE0567A02EEAF6D700A93A0D /* MatchesFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesFormView.swift; sourceTree = "<group>"; };
 		DE0567A32EEC516700A93A0D /* MailGenerate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailGenerate.swift; sourceTree = "<group>"; };
+		DE0567A62EEC635000A93A0D /* RestAPITransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPITransport.swift; sourceTree = "<group>"; };
+		DE0567A82EEC639D00A93A0D /* ShareDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareDataRequest.swift; sourceTree = "<group>"; };
+		DE0567AB2EEC6E0B00A93A0D /* TryAgainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryAgainViewController.swift; sourceTree = "<group>"; };
+		DE0567AD2EEC6E1300A93A0D /* TryAgainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryAgainView.swift; sourceTree = "<group>"; };
 		DE3C01C02ED7039D00EB2633 /* SecretSanta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretSanta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3C01D92ED703A200EB2633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE3C01DA2ED703A200EB2633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -449,6 +457,24 @@
 			path = Share;
 			sourceTree = "<group>";
 		};
+		DE0567A52EEC634800A93A0D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE0567A62EEC635000A93A0D /* RestAPITransport.swift */,
+				DE0567A82EEC639D00A93A0D /* ShareDataRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DE0567AA2EEC6DFF00A93A0D /* TryAgain */ = {
+			isa = PBXGroup;
+			children = (
+				DE0567AB2EEC6E0B00A93A0D /* TryAgainViewController.swift */,
+				DE0567AD2EEC6E1300A93A0D /* TryAgainView.swift */,
+			);
+			path = TryAgain;
+			sourceTree = "<group>";
+		};
 		DE3C01B72ED7039D00EB2633 = {
 			isa = PBXGroup;
 			children = (
@@ -561,6 +587,7 @@
 		DE3C02112ED7053C00EB2633 /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				DE0567A52EEC634800A93A0D /* Network */,
 				DE3C01EE2ED7053C00EB2633 /* Components */,
 				DE3C01F72ED7053C00EB2633 /* CustomViews */,
 				DE3C02012ED7053C00EB2633 /* Extension */,
@@ -629,6 +656,7 @@
 		DE3C02332ED7053C00EB2633 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				DE0567AA2EEC6DFF00A93A0D /* TryAgain */,
 				DE3C02ED2ED7206300EB2633 /* Onboarding */,
 				DE3C022D2ED7053C00EB2633 /* Paygate */,
 				DE3C02322ED7053C00EB2633 /* Splash */,
@@ -1209,6 +1237,7 @@
 				DE3C02812ED7053C00EB2633 /* RxActivityIndicator.swift in Sources */,
 				DE3F30E72EE1DABA00453818 /* ExcludePairsCollectionPairCell.swift in Sources */,
 				DE3C03102EDB107200EB2633 /* SecretSantasViewModel.swift in Sources */,
+				DE0567AE2EEC6E1300A93A0D /* TryAgainView.swift in Sources */,
 				DE3C03292EDB2F3800EB2633 /* MainView.swift in Sources */,
 				DE3C02822ED7053C00EB2633 /* TapAreaButton.swift in Sources */,
 				DE0567A12EEAF6D700A93A0D /* MatchesFormView.swift in Sources */,
@@ -1246,6 +1275,7 @@
 				DE3C02A22ED7053C00EB2633 /* SplashView.swift in Sources */,
 				DE05677D2EE4791F00A93A0D /* SettingsView.swift in Sources */,
 				DE3C03382EDB3C6B00EB2633 /* CreateSecretSantaView.swift in Sources */,
+				DE0567AC2EEC6E0B00A93A0D /* TryAgainViewController.swift in Sources */,
 				DE3F30D22EDEFADB00453818 /* CSSExcludePairsView.swift in Sources */,
 				DE3F30BB2EDCAEFA00453818 /* CSSParticipientsViewModel.swift in Sources */,
 				DE3F30BE2EDCB38A00453818 /* CSSParticipientsAddButton.swift in Sources */,
@@ -1277,6 +1307,8 @@
 				DE3C02B62ED7053C00EB2633 /* LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				DE0567702EE31A7F00A93A0D /* HomeInstructionItemView.swift in Sources */,
 				DE3C02B72ED7053C00EB2633 /* PaygateActionsView.swift in Sources */,
+				DE0567A92EEC639D00A93A0D /* ShareDataRequest.swift in Sources */,
+				DE0567A72EEC635000A93A0D /* RestAPITransport.swift in Sources */,
 				DE3F30EE2EE1FD7F00453818 /* CSSMatchesViewModel.swift in Sources */,
 				DE3C02B82ED7053C00EB2633 /* IAPErrorHelper.swift in Sources */,
 				DE3C02BB2ED7053C00EB2633 /* SplashViewController.swift in Sources */,
